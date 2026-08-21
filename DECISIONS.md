@@ -40,3 +40,15 @@
   no liability surface. Lessons L6–L9 added to charter.
 - Round 3 generation launched FROM this spec. Generator must pre-screen against
   L1–L9 and cite shape-matched comparables only.
+
+## 2026-08-22 — PRODUCT DECISION: build GuestLoop (podcast→LinkedIn with guest memory)
+- Kill-test results: consultant-briefs KILLED (Granola/Read AI already ship the
+  wedge); newsletter repurposing WEAK (Supergrow overlap, Buffer API unbuildable,
+  WTP unverified) → held in reserve; podcast→LinkedIn PROCEEDS with mandatory
+  repositioning (guest-relationship angle, not content volume), podfade-aware
+  billing, drafts-first delivery. Full report: products/diligence-round3.md.
+- Rationale: proven payment in exact shape (Castmagic $39–299/mo, Podsqueeze
+  $12–149/mo per L10 — demand evidence), ~30k active-B2B-show reachable TAM, ~95%
+  gross margin, per-customer accumulated memory as moat, and a differentiation the
+  incumbent doesn't optimize for (relationships/sales vs content volume).
+- Kill criteria set in products/guestloop/PRODUCT.md (4-week signal test).

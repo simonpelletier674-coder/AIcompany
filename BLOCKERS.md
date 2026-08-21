@@ -34,3 +34,9 @@ Claude never touches this; just confirming it's configured in the rail from item
 **Status:** none of these block the next ~2 weeks of work (ideation, build, landing
 page, organic channel prep). Item 1 becomes the critical path the day the product is
 sellable.
+
+## 5. Production LLM API key (needed before first CUSTOMER, not before landing page)
+The product pipeline (transcript digestion, draft generation) needs an Anthropic API
+key as a Cloudflare Worker secret, with a small budget (~$1–2 per customer per
+month at ~95% gross margin). Workers AI's built-in Whisper covers transcription on
+the free tier initially. Timing: when the waitlist converts to first trials.
