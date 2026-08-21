@@ -6,6 +6,18 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 00:15 UTC — Tick 2: Round-2 ideation landed; adversarial test running
+**Done:** Round-2 results committed to `products/ideation-round2.md`. Materially
+stronger batch: regulatory/deadline-monitoring plays with maintained-asset moats and
+named payment evidence. Top 2 (tied 36/40): TrademarkPulse (USPTO renewal/watch
+alerts, comparables $99–$3,000/yr per mark) and HardwareGrantRadar (curated SBIR/
+grant feed, comparables GrantWatch $199/yr, Instrumentl $299–999/mo). Adversarial
+due-diligence subagent launched to try to kill both (USPTO free reminders? attorney-
+of-record share? API limits? liability? churn dynamics?).
+**Learned:** Evidence-required rubric filtered out the commodity-tool genre entirely.
+**Next:** Integrate kill-test verdicts, pick the winner (or iterate again if both
+die), log decision, start scaffolding.
+
 ## 2026-08-22 00:00 UTC — Course correction: round-1 ideas rejected
 **Done:** Operator judged round-1 ideas weak; review of the scoring confirmed it
 (every finalist 2/5 defensibility — the rubric rewarded ease over value). Thesis
