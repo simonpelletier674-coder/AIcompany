@@ -8,14 +8,14 @@
 **Promo spend this month:** $0 / $100
 
 ## Now (next 3 ticks, in order)
-1. ✅ Round 1 ideation DONE but REJECTED by operator + own review (commodity ideas,
-   defensibility 2/5 across the board). See DECISIONS.md 2026-08-21. Round 2 running:
-   advantage-first thesis (maintained-asset moats), payment-evidence required.
-2. When round-2 results land: review critically (don't rubber-stamp), commit to
-   `products/ideation-round2.md`, pressure-test the top pick with an adversarial
-   subagent ("argue this will fail"), then decide and log in DECISIONS.md.
-3. Scaffold the chosen product in `products/<name>/` and deploy an MVP/landing page
-   to Cloudflare Workers to start collecting signal.
+1. ✅ Rounds 1+2 done. Round-2 top picks (TrademarkPulse, HardwareGrantRadar) KILLED
+   by adversarial diligence — see products/diligence-round2.md. Lessons L1–L5 now in
+   COMPANY.md and apply to every future idea.
+2. IN FLIGHT: kill-test of remaining candidates (ComplianceJobsRadar, AI Governance
+   Directory, LicenseTrack). If all die, the subagent delivers a pattern autopsy →
+   use it as the thesis for round 3. Integrate results, decide or iterate.
+3. Once a survivor exists: scaffold in `products/<name>/`, deploy MVP/landing page
+   to Cloudflare Workers, start collecting signal.
 
 ## Waiting on operator (see BLOCKERS.md)
 - Payment rail (blocks first dollar, not building)
