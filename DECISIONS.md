@@ -31,3 +31,12 @@
   (ComplianceJobsRadar, AI Governance Directory, LicenseTrack) before any round-3
   generation — they were evidence-backed and their moats (audience, curation in a
   fast-moving category) are different in kind from the killed pair.
+
+## 2026-08-22 — All five candidates killed; pattern-autopsy spec adopted as round-3 thesis
+- ComplianceJobsRadar, AI Governance Directory, LicenseTrack all KILLED (see
+  products/diligence-round2b.md). Combined with the earlier two kills, the autopsy
+  identified five systemic failure modes and a positive spec: labor-is-the-product,
+  single-sided self-serve, cadence-matched billing, search-reachable prosumer buyer,
+  no liability surface. Lessons L6–L9 added to charter.
+- Round 3 generation launched FROM this spec. Generator must pre-screen against
+  L1–L9 and cite shape-matched comparables only.

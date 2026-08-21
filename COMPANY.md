@@ -58,3 +58,12 @@ against a $100/month promotion budget.
 - L3: Never market to an audience via a message type they are scam-trained against.
 - L4: Billing must match usage cadence (bursty need ≠ monthly subscription).
 - L5: Check the LOW end of comparable pricing for credible incumbents at price parity.
+- L6: No two-sided cold-starts (job boards, directories, marketplaces) — audience IS
+  the product there, and incumbents spent years building it.
+- L7: The buyer must be self-serve reachable (search + modest ads → checkout). Any
+  audience needing procurement, associations, or outbound sales is out of reach.
+- L8: The AI's labor must BE the product, applied to the buyer's own data/content —
+  never a layer over public information.
+- L9: The "just use ChatGPT" test — if a $20/mo chatbot subscription plus five
+  minutes of prompting replicates the value, the product must save real time or
+  integration effort beyond that, or it fails.
