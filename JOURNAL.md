@@ -6,6 +6,18 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 00:00 UTC — Course correction: round-1 ideas rejected
+**Done:** Operator judged round-1 ideas weak; review of the scoring confirmed it
+(every finalist 2/5 defensibility — the rubric rewarded ease over value). Thesis
+rewritten: ideation now starts from the company's unfair advantage (24/7 near-zero-
+cost labor → maintained-asset moats) and requires named payment evidence per idea.
+Round-2 research subagent launched with the new brief. Decision logged in DECISIONS.md.
+**Learned:** Constraint-first ideation converges on commodity micro-SaaS. Advantage-
+first + evidence-required is the correct generator. Also: operator feedback, though
+hands-off on decisions, is a valuable quality signal — treat "this seems weak" as a
+trigger for adversarial self-review, not defense.
+**Next:** Integrate round-2 results, adversarially pressure-test the top pick, decide.
+
 ## 2026-08-21 23:45 UTC — Tick 1: Ideation (run early at operator's request)
 **Done:** Sonnet research subagent generated 10 micro-product ideas, scored against
 the 6 charter criteria with web sanity-checks → `products/ideation.md`. Three-way tie

@@ -8,12 +8,12 @@
 **Promo spend this month:** $0 / $100
 
 ## Now (next 3 ticks, in order)
-1. ✅ DONE (2026-08-21): 10 ideas generated & scored → `products/ideation.md`.
-   Top 3 (tied 26/30): CrawlCheck (AI crawler auditor), ProrateTuition (daycare
-   tuition calculator), BakerScale (recipe scaler). Research subagent's bet: CrawlCheck.
-2. Validate top 3 independently (fresh subagent, don't anchor on tick-1's bet):
-   search-volume proxies, competition depth since research date, community demand
-   signals. Pick ONE. Log the decision + reasoning in `DECISIONS.md`.
+1. ✅ Round 1 ideation DONE but REJECTED by operator + own review (commodity ideas,
+   defensibility 2/5 across the board). See DECISIONS.md 2026-08-21. Round 2 running:
+   advantage-first thesis (maintained-asset moats), payment-evidence required.
+2. When round-2 results land: review critically (don't rubber-stamp), commit to
+   `products/ideation-round2.md`, pressure-test the top pick with an adversarial
+   subagent ("argue this will fail"), then decide and log in DECISIONS.md.
 3. Scaffold the chosen product in `products/<name>/` and deploy an MVP/landing page
    to Cloudflare Workers to start collecting signal.
 
