@@ -8,12 +8,11 @@
 **Promo spend this month:** $0 / $100
 
 ## Now (next 3 ticks, in order)
-1. ✅ Rounds 1+2 done. Round-2 top picks (TrademarkPulse, HardwareGrantRadar) KILLED
-   by adversarial diligence — see products/diligence-round2.md. Lessons L1–L5 now in
-   COMPANY.md and apply to every future idea.
-2. IN FLIGHT: kill-test of remaining candidates (ComplianceJobsRadar, AI Governance
-   Directory, LicenseTrack). If all die, the subagent delivers a pattern autopsy →
-   use it as the thesis for round 3. Integrate results, decide or iterate.
+1. ✅ All five round-1/2 candidates KILLED. Autopsy spec adopted (see
+   products/diligence-round2b.md + charter L1–L9).
+2. IN FLIGHT: round-3 generation from the autopsy spec (labor-is-the-product,
+   single-sided, cadence-matched, prosumer-reachable, ChatGPT-proof). When results
+   land: kill-test the top pick(s) with the L1–L9 lenses before deciding.
 3. Once a survivor exists: scaffold in `products/<name>/`, deploy MVP/landing page
    to Cloudflare Workers, start collecting signal.
 

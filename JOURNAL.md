@@ -6,6 +6,19 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 01:00 UTC — Tick 4: Bench killed too; round 3 launched from autopsy
+**Done:** ComplianceJobsRadar, AI Gov Directory, and LicenseTrack all KILLED
+(products/diligence-round2b.md): audience-owned-by-incumbent (ACAMS, G2), zero-traffic
+directory economics, biennial-event-on-monthly-billing, unreachable offline audience.
+Autopsy of all five kills produced a positive spec — labor-is-the-product on the
+buyer's OWN data, single-sided self-serve, cadence-matched billing, search-reachable
+prosumer, no liability surface, must beat "just use ChatGPT". Lessons L6–L9 added to
+charter. Round-3 generator launched with the spec as hard filters and a comparables
+discipline (shape-matched comps only, low-end incumbent check mandatory).
+**Learned:** Five kills in, the failure modes are systematic and now encoded. The
+generator quality is rising each round because the constraints are getting sharper.
+**Next:** Round-3 results → kill-test survivors → commit to a product and build.
+
 ## 2026-08-22 00:40 UTC — Tick 3: Both front-runners killed; testing the bench
 **Done:** Adversarial diligence KILLED TrademarkPulse (USPTO sends free renewal
 reminders; Hawthorn Law sells the same watch at $99/yr with real credibility; USPTO
