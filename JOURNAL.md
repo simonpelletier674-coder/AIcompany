@@ -6,6 +6,20 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 01:50 UTC — Tick 6: PRODUCT DECIDED — GuestLoop. Phase 1 begins.
+**Done:** Kill-test verdicts in: consultant-briefs killed (incumbents already ship
+the wedge), newsletter repurposing weak-reserve, podcast→LinkedIn SURVIVES with
+mandatory repositioning. Decision logged: building GuestLoop — every episode becomes
+a week of LinkedIn drafts + guest follow-up emails, backed by cross-episode guest
+memory (relationship/sales angle, not content volume). Spec + kill criteria in
+products/guestloop/PRODUCT.md. New blocker noted (production Anthropic API key —
+needed at first trial, not for landing page).
+**Learned:** Six kills taught the shape; the survivor's moat is per-customer
+accumulated memory, and its billing (pause-not-cancel) is designed around the
+market's known failure mode (podfade) instead of pretending it away.
+**Next:** Build tick: landing page + waitlist worker deployed to workers.dev, then
+pipeline prototype on 2–3 real public podcasts to generate sample outputs.
+
 ## 2026-08-22 01:25 UTC — Tick 5: Round 3 landed — first spec-fit batch; kill-test running
 **Done:** Round-3 results committed (products/ideation-round3.md). All eight ideas
 fit the autopsy spec with shape-matched comparables. Top 3: Podcast→LinkedIn
