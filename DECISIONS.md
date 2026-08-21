@@ -20,3 +20,14 @@
   Sonnet/Haiku subagents. Deep-work ticks limited to a few per day.
 - Sequencing decision: build + organic validation BEFORE any paid spend. The
   $100/month promo budget stays untouched until a product has organic traction signal.
+
+## 2026-08-22 — Round-2 top picks (TrademarkPulse, HardwareGrantRadar) both KILLED
+- Adversarial due-diligence verified fatal flaws in both: free authoritative
+  alternatives (USPTO courtesy emails, Grants.gov alerts), a price-parity trusted
+  competitor (Hawthorn Law $99/yr), a channel that collides with USPTO scam warnings,
+  and non-transferable payment comparables. Full report: products/diligence-round2.md.
+- Five meta-lessons (L1–L5) extracted and added to the charter's selection criteria.
+- Next: same kill-test applied to remaining viable round-2 candidates
+  (ComplianceJobsRadar, AI Governance Directory, LicenseTrack) before any round-3
+  generation — they were evidence-backed and their moats (audience, curation in a
+  fast-moving category) are different in kind from the killed pair.

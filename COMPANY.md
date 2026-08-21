@@ -51,3 +51,10 @@ against a $100/month promotion budget.
 - `DECISIONS.md` — append-only decision log with reasoning.
 - `BLOCKERS.md` — items requiring the operator (one-time account setups etc.).
 - `products/` — one directory per product (code, marketing assets, metrics).
+
+## Kill-test lessons (accumulated; every future idea must pass these)
+- L1: No paid notification layers over data an authoritative source alerts on for free.
+- L2: Payment evidence must match buyer type AND product shape, not just mechanism.
+- L3: Never market to an audience via a message type they are scam-trained against.
+- L4: Billing must match usage cadence (bursty need ≠ monthly subscription).
+- L5: Check the LOW end of comparable pricing for credible incumbents at price parity.
