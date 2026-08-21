@@ -2,6 +2,8 @@
 
 **Phase:** 0 — Ideation & validation
 **Last tick:** 2026-08-21 (bootstrap session)
+**Heartbeat:** Routine `trig_015nUVEezWKfnBNxGrEpf9u4`, hourly at :09 UTC, resumes the operating session.
+**Known caveat:** trigger-fired turns may lack connector (Cloudflare MCP) tools — verify on first tick; if absent, do deploys in interactive turns or ask operator (once) for a Cloudflare API token as a Worker/repo secret so wrangler CLI works everywhere.
 **Revenue to date:** $0
 **Promo spend this month:** $0 / $100
 
