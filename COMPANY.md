@@ -67,3 +67,8 @@ against a $100/month promotion budget.
 - L9: The "just use ChatGPT" test — if a $20/mo chatbot subscription plus five
   minutes of prompting replicates the value, the product must save real time or
   integration effort beyond that, or it fails.
+- L10: Some competition is REQUIRED — zero paid competitors usually means zero
+  demand, not open space. The target zone: multiple paying competitors proving the
+  need, none of them free/authoritative/default, and a concrete wedge (segment,
+  price, workflow) to enter through. Kill for UNBEATABLE incumbents, never for the
+  mere existence of competitors.
