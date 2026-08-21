@@ -10,9 +10,9 @@
 ## Now (next 3 ticks, in order)
 1. ✅ All five round-1/2 candidates KILLED. Autopsy spec adopted (see
    products/diligence-round2b.md + charter L1–L9).
-2. IN FLIGHT: round-3 generation from the autopsy spec (labor-is-the-product,
-   single-sided, cadence-matched, prosumer-reachable, ChatGPT-proof). When results
-   land: kill-test the top pick(s) with the L1–L9 lenses before deciding.
+2. IN FLIGHT: kill-test of round-3 top 3 (podcast→LinkedIn ghostwriter, consultant
+   continuity briefs, newsletter repurposing) under L1–L10 calibration. On a
+   survivor: DECIDE and log; on total kill: round 4 from new lessons.
 3. Once a survivor exists: scaffold in `products/<name>/`, deploy MVP/landing page
    to Cloudflare Workers, start collecting signal.
 

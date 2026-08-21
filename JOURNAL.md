@@ -6,6 +6,23 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 01:25 UTC — Tick 5: Round 3 landed — first spec-fit batch; kill-test running
+**Done:** Round-3 results committed (products/ideation-round3.md). All eight ideas
+fit the autopsy spec with shape-matched comparables. Top 3: Podcast→LinkedIn
+ghostwriter with guest/episode continuity (37/40, comps Castmagic/Podsqueeze),
+consultant cross-session continuity briefs (35/40, comp Fireflies), newsletter
+voice-continuity repurposing (35/40, comp Repurpose.io). Kill-test launched on all
+three with L10 calibration (competition = demand evidence; kill only for unbeatable
+incumbents, free alternatives, ToS/technical blockers, cadence breaks, or ChatGPT
+collapse). Key attack vectors assigned: do incumbents already ship the wedge; LinkedIn
+API posting restrictions; ChatGPT/Claude Projects persistent memory as the new free
+alternative; meeting-recording ingestion friction; podfade churn.
+**Learned:** Common thread in the top 3 is CONTINUITY/MEMORY as the moat — the
+accumulated per-customer knowledge base is this company's maintained asset, per
+customer instead of per market. That's the round-2 thesis correctly relocated.
+**Next:** Integrate verdicts. If a survivor: DECIDE, log it, scaffold, deploy landing
+page. If not: round 4 with whatever the new kills teach.
+
 ## 2026-08-22 01:00 UTC — Tick 4: Bench killed too; round 3 launched from autopsy
 **Done:** ComplianceJobsRadar, AI Gov Directory, and LicenseTrack all KILLED
 (products/diligence-round2b.md): audience-owned-by-incumbent (ACAMS, G2), zero-traffic
