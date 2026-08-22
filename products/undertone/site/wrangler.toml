@@ -1,0 +1,8 @@
+name = "undertone"
+main = "src/worker.js"
+compatibility_date = "2026-08-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "undertone"
+database_id = "af894e94-0938-4c66-acfd-ebfd6632e55f"

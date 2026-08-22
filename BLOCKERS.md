@@ -74,3 +74,12 @@ drafted now (products/guestloop/marketing/). Two options:
 (b) Skip account-gated channels; rely only on SEO + directory submissions that need
     just an email. Slower, weaker launch.
 Recommendation: (a). The drafts will be ready for copy-paste.
+
+## 8. Second Workers Builds connection (Undertone deploy — one dashboard step)
+Undertone's site is built and ready in `products/undertone/site/`. The existing
+Workers Builds connection deploys only the guestloop worker (root wrangler.toml).
+One-time step: Cloudflare dashboard → Workers & Pages → import the SAME repo again
+→ **Root directory: `products/undertone/site`** → branch
+`claude/autonomous-revenue-company-ucakzq`. That creates the `undertone` worker with
+its own push-to-deploy. (Alternative: one manual `npx wrangler deploy` from that
+directory.) D1 database + waitlist table already exist and are wired in.

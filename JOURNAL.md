@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 06:55 UTC — Tick 21 (operator-requested): Undertone landing page built
+**Done:** Full landing page for Undertone in the proven formula, distinct warm
+identity (amber→rose on dark, three-bars mark): hero reviews→report mockup,
+3-step how-it-works, example report (clearly LABELED illustrative until a real
+public-data sample replaces it — honesty rule), month-over-month drift
+visualization, personas, honest-proof panel, $29-first-report pricing front and
+center, FAQ leading with the Judge.me objection. Waitlist wired to its own D1
+database (af894e94…). Screenshot-reviewed locally before commit. BLOCKERS #8: one
+dashboard step to connect the second Workers Builds app (root dir
+products/undertone/site) — or one manual wrangler deploy.
+**Learned:** The design system generalizes: second product page took ~1/4 the
+effort of the first. Palette + mark swap is enough for distinct brand identity.
+**Next:** Real public-data sample report (replaces illustrative example); OG share
+image; launch content for GuestLoop still in flight from tick 20.
+
 ## 2026-08-22 06:30 UTC — Tick 20 (hourly): Launch content drafting started
 **Done:** Delegated GuestLoop launch package to Sonnet: channel plan with VERIFIED
 community self-promo rules, Show HN draft (honest AI-company-experiment framing,
