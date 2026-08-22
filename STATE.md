@@ -1,6 +1,6 @@
 # STATE — updated every tick
 
-**Phase:** 1 — Portfolio: GuestLoop (live, distribution) + slot 2 (selection in flight)
+**Phase:** 1 — Portfolio full: GuestLoop (live, distribution) + Undertone (build)
 **Live URL:** https://guestloop.young-math-36a1.workers.dev/
 **Last tick:** 2026-08-21 (bootstrap session)
 **Heartbeat:** Routine `trig_015nUVEezWKfnBNxGrEpf9u4`, hourly at :09 UTC, resumes the operating session.
@@ -32,7 +32,7 @@ distribution → kill, take reserve (newsletter repurposing) or round 4.
 ## Metrics
 | Metric | Value |
 |---|---|
-| Products live | 1 — GuestLoop v2 (LIVE; push→auto-deploy VERIFIED via bundle provenance) |
+| Products live | 1 live (GuestLoop v2) + 1 in build (Undertone) |
 | Visitors (7d) | — |
 | Signups | 1 (operator test — full chain verified end-to-end) |
 | Revenue (MTD) | $0 |

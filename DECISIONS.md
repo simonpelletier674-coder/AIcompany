@@ -52,3 +52,14 @@
   gross margin, per-customer accumulated memory as moat, and a differentiation the
   incumbent doesn't optimize for (relationships/sales vs content volume).
 - Kill criteria set in products/guestloop/PRODUCT.md (4-week signal test).
+
+## 2026-08-22 — SLOT-2 DECISION: build Undertone (Shopify VoC report generator)
+- Round-4 selection: 8 candidates (4 round-3 leftovers + 4 fresh) screened against
+  L1–L10 + orthogonality; 7 killed on verified incumbents (EtsyHunt, Presly,
+  Unstar, Rocket Lawyer free tier, QuickBooks native absorption, Otter/PayHOA
+  bundling; YouTube refresh failed orthogonality). Full evidence:
+  products/diligence-round4.md.
+- Survivor Undertone PROCEEDS with required changes accepted: complement-not-
+  replacement positioning, $29 one-time entry + usage-tiered digests, CSV-first
+  MVP to bypass Shopify app-review latency. 4/4 orthogonality vs GuestLoop.
+- Portfolio now full (2/2). Next slot opens only on a kill or on revenue.

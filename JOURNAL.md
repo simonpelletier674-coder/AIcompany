@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 06:15 UTC — Tick 19: Slot 2 decided — Undertone (Shopify VoC reports)
+**Done:** Round-4 selection returned: 7 of 8 candidates killed on verified evidence
+(free/native incumbents or orthogonality failure). Survivor Undertone kill-tested
+and accepted with its required changes: merchant-facing monthly VoC report with
+trend memory + drafted actions; complement to Judge.me/Yotpo; $29 one-time entry
+then $19–39/mo usage tiers; CSV-upload MVP first (Shopify app review runs in
+parallel, never blocking). Spec + pre-committed kill criteria in
+products/undertone/PRODUCT.md. Portfolio full at 2/2.
+**Learned:** The selection round re-proved the method: platform absorption
+(QuickBooks shipping the feature natively) and free-tier incumbents are the two
+recurring assassins — check both FIRST in future rounds.
+**Next (portfolio order):** (1) GuestLoop launch posts + SEO — its clock should
+start first; (2) Undertone week-1 build in the gaps; (3) Lemon Squeezy remains the
+shared revenue blocker for BOTH products — now doubly urgent.
+
 ## 2026-08-22 05:55 UTC — Tick 18: Waitlist chain verified end-to-end
 **Done:** D1 shows 1 signup (00:50 UTC, operator's test). browser→form→worker→D1→
 tick-metrics loop proven. Slot-2 selection subagent still running.
