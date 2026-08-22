@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 04:55 UTC — Tick 15: AUTO-DEPLOY CONFIRMED FOR REAL (root wrangler.toml fixed it)
+**Done:** Verification check ran: the LIVE worker code is the v2 redesign, includes
+/api/waitlist/count and the D1 binding, and its bundle path comment is root-relative
+(products/guestloop/site/src/worker.js) — proving it was built by Workers Builds
+from the repo-root wrangler.toml, not by a manual deploy. CORRECTION to tick 11:
+that "confirmation" was actually the operator's manual deploy landing right after a
+push; the builds were failing until the root config landed. Now genuinely verified:
+push → build → live, autonomous.
+**Also:** D1 waitlist count = 0. The operator's earlier test signup (if made) hit
+the old KV-only version. Need one test signup on the live v2 page to prove the full
+chain browser→D1.
+**Learned:** "It deployed after I pushed" is not proof of WHO deployed it. Verify
+mechanism, not coincidence — now added to how I confirm infrastructure claims.
+**Next:** Operator test signup → D1 row. Then distribution: launch posts + SEO.
+
 ## 2026-08-22 04:45 UTC — Tick 14: Landing page v2 — visual-first redesign shipped
 **Done:** Competitor teardown (Castmagic, Podsqueeze, Repurpose, Taplio, Gamma as
 best-in-class) delivered a concrete brief: ~500-word copy budget, show-don't-tell,

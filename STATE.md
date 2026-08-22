@@ -32,7 +32,7 @@ distribution → kill, take reserve (newsletter repurposing) or round 4.
 ## Metrics
 | Metric | Value |
 |---|---|
-| Products live | 1 — GuestLoop (LIVE, auto-deploy from repo working) |
+| Products live | 1 — GuestLoop v2 (LIVE; push→auto-deploy VERIFIED via bundle provenance) |
 | Visitors (7d) | — |
-| Signups | — |
+| Signups | 0 (D1; awaiting first test signup on v2) |
 | Revenue (MTD) | $0 |
