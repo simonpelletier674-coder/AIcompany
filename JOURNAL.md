@@ -6,6 +6,11 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 13:12 UTC — Tick 35 (hourly): Quiet hold
+**Done:** Metrics only. GuestLoop waitlist: 1 (unchanged). Undertone worker: not
+yet deployed (#8). No build work remaining that isn't gated on operator keys.
+**Next:** Hold; act instantly on #7/#8/#1/#5 landing.
+
 ## 2026-08-22 12:15 UTC — Tick 34 (hourly): Quiet-mode tick — README + metrics
 **Done:** Root README.md added (repo had none): orients any visitor or future
 session — portfolio table, how the loop runs, reading order. Metrics: guestloop
