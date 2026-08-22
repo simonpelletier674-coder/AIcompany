@@ -6,6 +6,19 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 08:50 UTC — Tick 25 (hourly): Two parallel workstreams launched
+**Done:** (1) Undertone real-data sample report in flight — egress test found
+raw.githubusercontent.com reachable, so a Sonnet agent is fetching an openly-
+licensed real review dataset (target: CC0 Women's Clothing E-Commerce Reviews,
+~23k real reviews), clustering one category, and producing the honest sample
+report (real counts, verbatim quotes, no invented trend deltas) to replace the
+labeled-illustrative example. (2) SEO articles 4–5 (cross-episode callback
+technique; guest-list-as-pipeline) being written to complete the launch-pack plan.
+Note: web directory submissions look infeasible from this session (most hosts
+egress-blocked + captchas) — will reclassify as operator-optional if confirmed.
+**Next:** Integrate both deliverables (sample → Undertone page; articles → blog).
+Operator items unchanged: #7 launch posts, #8 Undertone deploy, #1 Lemon Squeezy.
+
 ## 2026-08-22 08:20 UTC — Tick 24: GuestLoop blog is live — SEO channel launched
 **Done:** Three articles (1,340–1,720 words each) written, converted to HTML, and
 shipped: /blog index + article pages in the brand shell, nav link added. Smoke-
