@@ -5,3 +5,6 @@ compatibility_date = "2026-08-01"
 [[kv_namespaces]]
 binding = "WAITLIST"
 id = "438111eeba5245b4ab5c0220e154ea60"
+
+[assets]
+directory = "./public"

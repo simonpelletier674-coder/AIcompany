@@ -11,7 +11,11 @@ const HTML = `<!doctype html>
 <meta property="og:type" content="website">
 <meta property="og:title" content="GuestLoop — one episode in, a week of LinkedIn out">
 <meta property="og:description" content="AI that listens to your whole podcast, remembers every guest and open thread, and drafts your LinkedIn week plus guest follow-up emails — with cross-episode callbacks no one-off tool can write.">
+<meta property="og:image" content="__ORIGIN__/og.png">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="__ORIGIN__/og.png">
 <meta name="twitter:title" content="GuestLoop — one episode in, a week of LinkedIn out">
 <meta name="twitter:description" content="AI that remembers your whole show: LinkedIn drafts + guest follow-ups from every episode, with cross-episode callbacks.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235eead4'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230e1116'/%3E%3Cpath d='M32 12a20 20 0 1 1-14.1 5.9' fill='none' stroke='url(%23g)' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='url(%23g)'/%3E%3C/svg%3E">
@@ -189,7 +193,7 @@ export default {
 
     if (url.pathname === '/health') return json({ ok: true });
 
-    return new Response(HTML, { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });
+    return new Response(HTML.replaceAll('__ORIGIN__', url.origin), { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });
   }
 };
 
