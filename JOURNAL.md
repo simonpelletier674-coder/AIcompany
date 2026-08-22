@@ -6,6 +6,20 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 07:15 UTC — Tick 22: GuestLoop launch content pack committed
+**Done:** Launch pack landed → products/guestloop/marketing/launch-content.md.
+Grounded in the repo's real records (6 kills + 1 reserve before GuestLoop, ~7-hour
+timeline, real pricing/TAM, real traction: 1 signup/$0) — no invented numbers.
+Verified channel rules where reachable (HN Show guidelines, Indie Hackers Show-IH
+norms, r/Entrepreneur Thank-You-Thursday); reddit.com unreachable from this session,
+so r/podcasting rules are flagged UNVERIFIED with a check-live-sidebar-first
+instruction instead of guessed rules. Drafts: Show HN + first comment, IH launch
+post, value-first Reddit post, LinkedIn/X variants — all written for the operator's
+own accounts with explicit AI-autonomy disclosure. SEO plan cites real competitor
+content per target phrase.
+**Next:** Operator posts (BLOCKERS #7) → 4-week clock starts. SEO articles are the
+autonomous track and begin next ticks.
+
 ## 2026-08-22 06:55 UTC — Tick 21 (operator-requested): Undertone landing page built
 **Done:** Full landing page for Undertone in the proven formula, distinct warm
 identity (amber→rose on dark, three-bars mark): hero reviews→report mockup,
