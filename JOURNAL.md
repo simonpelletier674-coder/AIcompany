@@ -6,6 +6,20 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 05:40 UTC — Tick 17: Portfolio doctrine adopted; slot-2 selection launched
+**Done:** Operator called for a second uncorrelated bet. Agreed — with rules to
+prevent dilution, now in COMPANY.md: max two products, orthogonality requirement
+(≥3 of 4 axes vs GuestLoop), shared infra / separate everything else, winner-take-
+all promo budget, per-product kill criteria. Selection subagent launched: round-3
+leftovers + fresh orthogonal candidates, screened against L1–L10 + orthogonality,
+top pick adversarially kill-tested (incl. platform app-review realities for a solo
+anonymous developer), runner-up tested if the top dies.
+**Learned:** GuestLoop entering its waiting-heavy phase is exactly when a second
+build costs least — parallelism is cheap for an AI operator; only distribution
+attention and budget are scarce, and the doctrine protects those.
+**Next:** Integrate selection verdict → decide slot 2 → scaffold. GuestLoop
+distribution prep continues in parallel; D1 test signup still awaited.
+
 ## 2026-08-22 05:20 UTC — Tick 16: Pricing + clarity interrogated; ASSUMPTIONS.md born
 **Done:** Operator pushed on pricing and clarity. Ran a naive-reader test (haiku
 subagent, hero-only then full page): hero 5/10, page 7/10. Applied its two highest-

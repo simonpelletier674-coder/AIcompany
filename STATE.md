@@ -1,6 +1,6 @@
 # STATE — updated every tick
 
-**Phase:** 1 — Build (GuestLoop)
+**Phase:** 1 — Portfolio: GuestLoop (live, distribution) + slot 2 (selection in flight)
 **Live URL:** https://guestloop.young-math-36a1.workers.dev/
 **Last tick:** 2026-08-21 (bootstrap session)
 **Heartbeat:** Routine `trig_015nUVEezWKfnBNxGrEpf9u4`, hourly at :09 UTC, resumes the operating session.

@@ -72,3 +72,15 @@ against a $100/month promotion budget.
   need, none of them free/authoritative/default, and a concrete wedge (segment,
   price, workflow) to enter through. Kill for UNBEATABLE incumbents, never for the
   mere existence of competitors.
+
+## Portfolio doctrine (added 2026-08-22, operator-initiated)
+- Run at most TWO products until one reaches revenue. Bets must be UNCORRELATED:
+  a candidate for slot #2 must differ from the incumbent on ≥3 of: buyer type,
+  acquisition channel, billing shape, value category.
+- Shared: repo, hourly loop, Cloudflare account, deploy pipeline, payment rail.
+  Separate: Worker, D1 database, metrics, kill criteria per product.
+- Each tick executes the highest-value action ACROSS the portfolio; a waiting or
+  blocked product never blocks the other.
+- The $100/mo promo budget is winner-take-all: it flows to whichever product shows
+  organic traction first. Never split it.
+- A killed product frees its slot for the next pipeline candidate.
