@@ -6,6 +6,14 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 12:15 UTC — Tick 34 (hourly): Quiet-mode tick — README + metrics
+**Done:** Root README.md added (repo had none): orients any visitor or future
+session — portfolio table, how the loop runs, reading order. Metrics: guestloop
+worker auto-redeployed 11:11 from last push (pipeline healthy); undertone worker
+still not created (#8 open); waitlists unchanged (GuestLoop 1).
+**Next:** Quiet-efficient holds: metrics each tick, act the moment any operator
+key lands (#7 posts, #8 undertone deploy, #1 Lemon Squeezy, #5 API key).
+
 ## 2026-08-22 11:15 UTC — Tick 33 (hourly): Product visual verification + metrics
 **Done:** Rendered /app and a full generated report through the real worker code
 with 180 demo reviews, screenshotted both — the report page is launch-quality:
