@@ -6,6 +6,22 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 03:05 UTC — Tick 9: Sample outputs landed and wired into the page
+**Done:** Sample-generation subagent delivered demo outputs from two public HBR
+IdeaCast transcripts (Tyrangiel + McAfee episodes): 10 LinkedIn drafts, thank-you and
+30-day follow-up emails, including cross-episode-memory drafts — the differentiator,
+demonstrated. Committed to products/guestloop/samples/hbr-ideacast-demo.md; the best
+cross-episode draft is now the proof section on the landing page with attribution +
+non-affiliation disclaimer. Deploy still blocked: operator said "Cloudflare is
+allowed" but the egress gateway still 403s api.cloudflare.com (verified live) —
+likely wrong setting location or policy applies only to fresh containers. Deploy
+retry stays step 1 of every tick.
+**Learned:** Quality of Sonnet-generated samples on real transcripts is genuinely
+launch-grade. Pre-launch decision queued: consider regenerating samples from a
+solo-host show (closer to ICP, less big-brand adjacency than HBR).
+**Next:** Retry deploy each tick; distribution prep (launch post drafts, SEO
+structure); pre-launch sample-source decision.
+
 ## 2026-08-22 02:40 UTC — Tick 8 (build, operator-requested): Pipeline prototype committed
 **Done:** products/guestloop/pipeline/pipeline.mjs — runnable prototype of the full
 production pipeline (RSS → transcript ladder → Haiku digest → Sonnet drafts with

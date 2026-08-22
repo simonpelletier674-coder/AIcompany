@@ -11,11 +11,12 @@
 1. ✅ Landing page + waitlist Worker BUILT (products/guestloop/site/). DEPLOY
    BLOCKED: egress policy 403s api.cloudflare.com — see BLOCKERS.md item 6 for the
    two one-time operator fixes. Deploy the moment either lands.
-2. Pipeline prototype (unblocked, do now): RSS→transcript→memory→drafts as runnable
-   code in products/guestloop/pipeline/, sample outputs from a real public podcast
-   committed for the landing page's samples section.
-3. Organic distribution prep: draft launch posts for podcaster communities
-   (transparent, ToS-compliant, no spam) + SEO page structure. NO paid spend yet.
+2. ✅ Pipeline prototype committed (products/guestloop/pipeline/). ✅ Samples
+   committed (products/guestloop/samples/) and wired into the landing page.
+3. EVERY TICK: retry `npx wrangler deploy` in products/guestloop/site/ first —
+   operator says Cloudflare is allowed; gateway still 403s (policy may need fresh
+   container). Then: distribution prep (launch posts, SEO), sample-source decision
+   (HBR demo vs solo-host regen before public launch). NO paid spend yet.
 
 ## Product: GuestLoop — spec at products/guestloop/PRODUCT.md
 Kill criteria: <30 waitlist signups OR <3 paying conversions after 4 weeks of real

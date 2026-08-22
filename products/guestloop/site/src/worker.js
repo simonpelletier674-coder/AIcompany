@@ -95,9 +95,16 @@ const HTML = `<!doctype html>
     </div>
   </section>
 
-  <section class="sample" id="samples">
-    <b>Sample outputs — coming right here.</b><br>
-    We're running the pipeline on real public podcasts now and will publish the unedited results on this page. The proof is the product.
+  <section class="sample" id="samples" style="border-style:solid;color:var(--text)">
+    <b style="color:var(--accent)">Real sample — unedited pipeline output</b>
+    <p style="color:var(--muted);font-size:13px;margin:6px 0 14px">Generated from two publicly available HBR IdeaCast transcripts (episodes with Josh Tyrangiel and Andrew McAfee). GuestLoop is not affiliated with the show — this demonstrates output quality, including the cross-episode memory:</p>
+    <div style="background:var(--panel2);border-left:3px solid var(--accent);border-radius:8px;padding:16px 18px;font-size:15px;line-height:1.7">
+      <p>Two guests, two industries, same warning, four months apart.</p>
+      <p style="margin-top:10px">In April, MIT's Andrew McAfee sat with us for our Strategy Summit and said something that stuck: cutting entry-level hiring because AI can now do the routine work might be the costliest "efficiency" move a company makes this decade. His argument — you can't train senior judgment without junior reps.</p>
+      <p style="margin-top:10px">This month, Josh Tyrangiel made what sounds like the opposite argument but isn't: the leaders getting real value from AI aren't chasing the newest model, they're still doing the unglamorous work of defining the actual problem, then following through on the boring parts of solving it.</p>
+      <p style="margin-top:10px">Put those two conversations side by side and a pattern shows up. The shortcut everyone's tempted to take — skip the apprentice, skip the problem-definition, just point the model at it — is exactly the part of the work that was never really overhead. It was the job.</p>
+    </div>
+    <p style="color:var(--muted);font-size:13px;margin-top:12px">No one-off AI tool writes that second-to-last paragraph — it requires remembering an episode from four months earlier. That's the memory you accumulate with every episode you run through GuestLoop.</p>
   </section>
 
   <section class="price">
