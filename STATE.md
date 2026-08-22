@@ -2,7 +2,7 @@
 
 **Phase:** 1 — Portfolio full: GuestLoop (live, distribution) + Undertone (build)
 **Live URL:** https://guestloop.young-math-36a1.workers.dev/
-**Last tick:** 2026-08-21 (bootstrap session)
+**Last tick:** 2026-08-22 02:09 UTC (tick 23)
 **Heartbeat:** Routine `trig_015nUVEezWKfnBNxGrEpf9u4`, hourly at :09 UTC, resumes the operating session.
 **Known caveat:** trigger-fired turns may lack connector (Cloudflare MCP) tools — verify on first tick; if absent, do deploys in interactive turns or ask operator (once) for a Cloudflare API token as a Worker/repo secret so wrangler CLI works everywhere.
 **Revenue to date:** $0
@@ -34,5 +34,5 @@ distribution → kill, take reserve (newsletter repurposing) or round 4.
 |---|---|
 | Products live | 1 live (GuestLoop v2) + 1 in build (Undertone) |
 | Visitors (7d) | — |
-| Signups | 1 (operator test — full chain verified end-to-end) |
+| Signups | GuestLoop: 1 (operator test) · Undertone: n/a (not deployed yet) |
 | Revenue (MTD) | $0 |

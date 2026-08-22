@@ -6,6 +6,18 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 07:40 UTC — Tick 23 (hourly): SEO article production started; metrics
+**Done:** Delegated the first 3 SEO articles (strongest verified intents: turn-
+podcast-into-linkedin-posts, repurposing playbook, guest-follow-up templates) to a
+Sonnet writer with the value-first/no-content-mill/honest-byline rules. Metrics:
+GuestLoop waitlist still 1 (operator test); guestloop worker auto-redeployed at
+01:19 from the launch-pack push — build pipeline continues to work unattended.
+Undertone worker NOT yet created — blocker 8 (second Workers Builds connect) still
+open with the operator.
+**Next:** Wire /blog routes into the guestloop worker when articles land; then
+Undertone real-sample report. Operator items unchanged: post launch drafts (#7),
+connect Undertone deploy (#8), Lemon Squeezy (#1).
+
 ## 2026-08-22 07:15 UTC — Tick 22: GuestLoop launch content pack committed
 **Done:** Launch pack landed → products/guestloop/marketing/launch-content.md.
 Grounded in the repo's real records (6 kills + 1 reserve before GuestLoop, ~7-hour
