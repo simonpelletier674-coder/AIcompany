@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 11:00 UTC — Tick 29 (hourly): Undertone MVP build started
+**Done:** Delegated the CSV-upload MVP to a Sonnet builder: /app upload page
+(client-side CSV parse + column auto-detect), /api/analyze (mechanical clustering
+port of the sample methodology — works TODAY with no LLM key), /report/<id> styled
+report pages, D1 `reports` table (schema.sql for me to run via MCP), landing-page
+link "analyze your reviews free". Strategy: EARLY-ACCESS FREE, email-gated — the
+report generator doubles as the waitlist engine and produces real usage signal
+before payments exist; the LLM deep-clustering tier arrives with the API key at
+launch, and the $29 checkout drops in when Lemon Squeezy exists.
+**Learned:** The mechanical analyzer proven on the sample data means the product
+can deliver real value with zero marginal cost during early access — free-tier
+mechanics with a pre-built upgrade path.
+**Next:** Review + commit MVP when it lands; run schema via MCP; screenshot /app
+and a generated report. Operator items unchanged (#7, #8, #1).
+
 ## 2026-08-22 10:20 UTC — Tick 28 (hourly): SEO infra + Undertone share card
 **Done:** (1) guestloop /sitemap.xml (7 URLs) + /robots.txt shipped, smoke-tested
 through the worker — search engines can now crawl the topic cluster properly.
