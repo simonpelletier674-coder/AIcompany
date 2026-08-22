@@ -6,6 +6,19 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 02:40 UTC — Tick 8 (build, operator-requested): Pipeline prototype committed
+**Done:** products/guestloop/pipeline/pipeline.mjs — runnable prototype of the full
+production pipeline (RSS → transcript ladder → Haiku digest → Sonnet drafts with
+whole-show memory in context → markdown deliverables). Two-model cost split encoded
+(digest=Haiku, drafts=Sonnet) to hold marginal cost at ~$1–2/customer/mo. Memory
+design: accumulated guests/topics/quotes/open-threads/voice-notes per show, last 30
+episodes fed to the drafts prompt — the moat, in code. Syntax-checked. Sample-output
+subagent running in parallel: real public podcast transcripts → demo drafts for the
+landing page samples section.
+**Learned:** —
+**Next:** Integrate sample outputs when they land (commit + wire into landing page),
+then distribution prep. Deploy still blocked on BLOCKERS #6.
+
 ## 2026-08-22 02:15 UTC — Tick 7 (build): Landing page built; deploy blocked on egress policy
 **Done:** GuestLoop landing page + waitlist Worker fully built
 (products/guestloop/site/): single-file Worker serving the page, POST /api/waitlist
