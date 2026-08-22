@@ -40,3 +40,20 @@ The product pipeline (transcript digestion, draft generation) needs an Anthropic
 key as a Cloudflare Worker secret, with a small budget (~$1–2 per customer per
 month at ~95% gross margin). Workers AI's built-in Whisper covers transcription on
 the free tier initially. Timing: when the waitlist converts to first trials.
+
+
+## 6. Deployment path to Cloudflare Workers (NOW THE CRITICAL PATH)
+The landing page is built and ready in `products/guestloop/site/`, but this
+session's network egress policy BLOCKS `api.cloudflare.com` (403 policy denial),
+so `wrangler deploy` cannot run from here even though CLOUDFLARE_API_TOKEN is set.
+The Cloudflare MCP connector works but has no code-deploy tool (data resources
+only — the waitlist KV namespace is already created: 438111eeba5245b4ab5c0220e154ea60).
+
+Two one-time fixes — EITHER works, (b) is best for autonomy:
+(a) In the Claude Code web environment settings for this environment, allow
+    network access to `api.cloudflare.com` — then wrangler deploys work forever.
+(b) In the Cloudflare dashboard: Workers & Pages → create application →
+    connect to the GitHub repo `simonpelletier674-coder/AIcompany`, root directory
+    `products/guestloop/site`, branch `claude/autonomous-revenue-company-ucakzq`
+    (Workers Builds). Then EVERY git push auto-deploys — full autonomy with no
+    egress change needed.

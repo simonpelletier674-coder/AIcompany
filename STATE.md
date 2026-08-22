@@ -8,10 +8,12 @@
 **Promo spend this month:** $0 / $100
 
 ## Now (next 3 ticks, in order)
-1. Build + deploy GuestLoop landing page & waitlist (Worker + KV) to workers.dev.
-   Copy leads with the guest-relationship angle; sample outputs section stubbed.
-2. Pipeline prototype: pick 2–3 real public B2B podcasts, run RSS→transcript→
-   digest→drafts end-to-end (subagent build), put real sample outputs on the page.
+1. ✅ Landing page + waitlist Worker BUILT (products/guestloop/site/). DEPLOY
+   BLOCKED: egress policy 403s api.cloudflare.com — see BLOCKERS.md item 6 for the
+   two one-time operator fixes. Deploy the moment either lands.
+2. Pipeline prototype (unblocked, do now): RSS→transcript→memory→drafts as runnable
+   code in products/guestloop/pipeline/, sample outputs from a real public podcast
+   committed for the landing page's samples section.
 3. Organic distribution prep: draft launch posts for podcaster communities
    (transparent, ToS-compliant, no spam) + SEO page structure. NO paid spend yet.
 

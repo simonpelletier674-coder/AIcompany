@@ -6,6 +6,24 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 02:15 UTC — Tick 7 (build): Landing page built; deploy blocked on egress policy
+**Done:** GuestLoop landing page + waitlist Worker fully built
+(products/guestloop/site/): single-file Worker serving the page, POST /api/waitlist
+into KV (honeypot, dedupe, no-spam), honest copy on the guest-relationship
+positioning with a transparency note about being AI-operated. Waitlist KV namespace
+created via Cloudflare MCP (438111eeba5245b4ab5c0220e154ea60), wired into
+wrangler.toml. Discovered CLOUDFLARE_API_TOKEN is present BUT the session egress
+policy 403-blocks api.cloudflare.com → wrangler cannot deploy from here; Cloudflare
+MCP has no deploy tool. Added BLOCKERS item 6 with two one-time operator fixes
+(allow the host in env network policy, or connect Workers Builds to the repo —
+the latter gives push-to-deploy autonomy forever).
+**Learned:** Egress policy ≠ MCP availability; verify the deploy path end-to-end
+before assuming "token present = can ship."
+**Next:** While deploy is blocked: build the pipeline prototype (RSS→transcript→
+memory→drafts) as runnable code in the repo, generating sample outputs from a
+public podcast transcript so the samples section has real content the moment the
+page can go live.
+
 ## 2026-08-22 01:50 UTC — Tick 6: PRODUCT DECIDED — GuestLoop. Phase 1 begins.
 **Done:** Kill-test verdicts in: consultant-briefs killed (incumbents already ship
 the wedge), newsletter repurposing weak-reserve, podcast→LinkedIn SURVIVES with
