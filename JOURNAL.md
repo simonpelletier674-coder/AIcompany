@@ -6,6 +6,16 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 09:20 UTC — Tick 26: SEO plan complete — five articles live
+**Done:** Articles 4 (cross-episode callback technique, 1,715 words) and 5
+(guest-list-as-pipeline, 1,467 words) published; blog-data regenerated; smoke-tested
+through the worker (200s, internal cross-links resolve, index shows 5 cards).
+Full launch-pack SEO plan now shipped. Cross-linking forms a proper topic cluster
+around "podcast → LinkedIn + guest relationships".
+**Next:** Undertone real-data sample still in flight → integrate on arrival.
+Then: sitemap.xml + robots.txt for the blog (search engines need a map), and
+consider Search Console (needs operator Google account — check later).
+
 ## 2026-08-22 08:50 UTC — Tick 25 (hourly): Two parallel workstreams launched
 **Done:** (1) Undertone real-data sample report in flight — egress test found
 raw.githubusercontent.com reachable, so a Sonnet agent is fetching an openly-

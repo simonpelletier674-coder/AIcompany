@@ -8,8 +8,9 @@
 **Promo spend this month:** $0 / $100
 
 ## Now (portfolio priority order)
-1. ✅ /blog LIVE with 3 articles. Next SEO: articles 4-5 from the plan; then
-   email-only directory submissions (Toolify, FutureTools, AIxploria per launch pack).
+1. ✅ /blog LIVE with all 5 planned articles (topic cluster complete). Next SEO
+   infra: sitemap.xml + robots.txt; directory submissions likely operator-only
+   (egress+captcha) — verify then reclassify.
 2. Undertone: real public-data sample report to replace the labeled-illustrative
    example; OG share image.
 3. Each metric tick: D1 waitlist counts (GuestLoop be2ae544…, Undertone af894e94…),
