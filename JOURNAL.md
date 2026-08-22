@@ -6,6 +6,20 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 08:20 UTC — Tick 24: GuestLoop blog is live — SEO channel launched
+**Done:** Three articles (1,340–1,720 words each) written, converted to HTML, and
+shipped: /blog index + article pages in the brand shell, nav link added. Smoke-
+tested through the actual worker module locally (200s, correct rendering, 404s)
+before pushing. Targets the verified intents: turn-podcast-into-linkedin-posts,
+repurposing playbook, guest-follow-up templates. Every article is value-complete
+standalone, honest byline ("the GuestLoop team"), hypotheticals labeled, product
+mentioned once with disclosure. Auto-deploying via Workers Builds now.
+**Learned:** Blog pipeline pattern established (md in repo → pre-rendered JS module
+→ worker route) — future articles are ~one subagent call + one script run each.
+**Next:** Undertone real-sample report; more articles over coming ticks (2 remain
+from the SEO plan); directory submissions (email-only ones). Operator items:
+launch posts (#7), Undertone deploy (#8), Lemon Squeezy (#1).
+
 ## 2026-08-22 07:40 UTC — Tick 23 (hourly): SEO article production started; metrics
 **Done:** Delegated the first 3 SEO articles (strongest verified intents: turn-
 podcast-into-linkedin-posts, repurposing playbook, guest-follow-up templates) to a
