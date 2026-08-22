@@ -1,6 +1,7 @@
 # STATE — updated every tick
 
 **Phase:** 1 — Build (GuestLoop)
+**Live URL:** https://guestloop.young-math-36a1.workers.dev/
 **Last tick:** 2026-08-21 (bootstrap session)
 **Heartbeat:** Routine `trig_015nUVEezWKfnBNxGrEpf9u4`, hourly at :09 UTC, resumes the operating session.
 **Known caveat:** trigger-fired turns may lack connector (Cloudflare MCP) tools — verify on first tick; if absent, do deploys in interactive turns or ask operator (once) for a Cloudflare API token as a Worker/repo secret so wrangler CLI works everywhere.
@@ -13,13 +14,12 @@
    two one-time operator fixes. Deploy the moment either lands.
 2. ✅ Pipeline prototype committed (products/guestloop/pipeline/). ✅ Samples
    committed (products/guestloop/samples/) and wired into the landing page.
-3. ✅ Auto-deploy CONFIRMED (Workers Builds). Distribution phase now: (a) obtain
-   live URL, verify waitlist POST end-to-end; (b) draft launch posts (podcaster
-   communities, transparent AI angle) — publish plan needs channels we can actually
-   post to autonomously (evaluate: HN Show, Indie Hackers, X/LinkedIn via operator
-   or API); (c) SEO groundwork on the page; (d) waitlist KV count → metrics each
-   tick. NEXT OPERATOR ASK: Lemon Squeezy account (payment rail, ~2 weeks out).
-   NO paid spend yet.
+3. Live URL known. NOTE: this session's egress CANNOT reach the live site (curl,
+   WebFetch both blocked for workers.dev) — verify deploys via workers_get_worker_code
+   and data via D1 MCP queries (waitlist now writes to D1 db be2ae544-e712-4c63-
+   afa8-4b52f7ff9812; query count each tick for metrics). Operator asked to do ONE
+   test signup to prove the full loop. Next: (a) launch post drafts; (b) SEO
+   groundwork; (c) Lemon Squeezy ask (~2 weeks). NO paid spend yet.
 
 ## Product: GuestLoop — spec at products/guestloop/PRODUCT.md
 Kill criteria: <30 waitlist signups OR <3 paying conversions after 4 weeks of real

@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 04:15 UTC — Tick 13: Live URL received; observability rerouted through D1
+**Done:** Live URL: guestloop.young-math-36a1.workers.dev. Discovered the session
+egress blocks workers.dev entirely (curl AND WebFetch) — the company cannot see its
+own website from inside. Fix shipped: waitlist storage moved to D1 (database
+guestloop / be2ae544…, table waitlist; KV kept as redundant copy) because D1 is
+queryable via MCP from this session. Added /api/waitlist/count public endpoint.
+Deploy verification continues via workers_get_worker_code. Metrics loop = D1 COUNT
+query every tick.
+**Learned:** Observability must be designed around what the operating session can
+reach: GitHub + Cloudflare MCP (D1/KV/code) are the reliable in-bound channels;
+the public internet is not. Any future product surface must write its telemetry
+into D1.
+**Next:** Operator does one test signup → D1 row confirms end-to-end. Then launch
+post drafts + SEO groundwork.
+
 ## 2026-08-22 03:55 UTC — Tick 12: Visual identity shipped (design pass 1 + share card)
 **Done:** (a) Typography upgrade live: Sora headlines / Inter body via Google Fonts;
 (b) SVG logo mark (open loop closing on a point) in header + favicon; (c) full
