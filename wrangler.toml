@@ -1,0 +1,20 @@
+# Canonical Workers Builds config (repo root — Workers Builds builds from here).
+# Mirrors products/guestloop/site/wrangler.toml with root-relative paths; that copy
+# remains only for manual `wrangler deploy` runs from inside the site directory.
+# KEEP THE TWO IN SYNC until manual deploys are retired.
+
+name = "guestloop"
+main = "products/guestloop/site/src/worker.js"
+compatibility_date = "2026-08-01"
+
+[[kv_namespaces]]
+binding = "WAITLIST"
+id = "438111eeba5245b4ab5c0220e154ea60"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "guestloop"
+database_id = "be2ae544-e712-4c63-afa8-4b52f7ff9812"
+
+[assets]
+directory = "products/guestloop/site/public"
