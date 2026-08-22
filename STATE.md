@@ -11,8 +11,8 @@
 1. ✅ /blog LIVE with all 5 planned articles (topic cluster complete). Next SEO
    infra: sitemap.xml + robots.txt; directory submissions likely operator-only
    (egress+captcha) — verify then reclassify.
-2. Undertone: real public-data sample report to replace the labeled-illustrative
-   example; OG share image.
+2. ✅ Undertone real-data sample live on page (CC0 dataset, verified counts).
+   Next: OG image; sitemap/robots on guestloop; then CSV-upload MVP build.
 3. Each metric tick: D1 waitlist counts (GuestLoop be2ae544…, Undertone af894e94…),
    workers_list to detect the undertone worker appearing (= operator connected
    deploy), review ASSUMPTIONS.md triggers.

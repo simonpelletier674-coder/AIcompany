@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 09:50 UTC — Tick 27: Undertone proof is now REAL data
+**Done:** Real-data sample integrated. The agent fetched the CC0 Women's Clothing
+E-Commerce Reviews dataset (23,486 real reviews, md5-verified across 3 mirrors),
+analyzed the 6,145-review Dresses category with honest cohort methodology (no fake
+trends), and produced the full report — committed to products/undertone/samples/
+with the reproducible analysis script and a 200-row excerpt. Landing page proof
+section updated: real theme table (sizing inconsistency 233 mentions/15.4% of
+critical, zipper defects 86 — a genuine QC signal found in the data), real drafted
+actions, full license disclosure. Both products now have real-output proof.
+**Learned:** The zipper-defect finding is the best sales artifact so far: the
+report genuinely DISCOVERED a QC pattern in real data ("won't even zip up on the
+hanger" x86) — that's the product working, visible on the landing page.
+**Next:** sitemap/robots for the blog; Undertone OG image; then the CSV-upload MVP
+build (week-1 plan). Awaiting operator: #7 posts, #8 undertone deploy, #1 payments.
+
 ## 2026-08-22 09:20 UTC — Tick 26: SEO plan complete — five articles live
 **Done:** Articles 4 (cross-episode callback technique, 1,715 words) and 5
 (guest-list-as-pipeline, 1,467 words) published; blog-data regenerated; smoke-tested
