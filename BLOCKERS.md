@@ -42,7 +42,13 @@ month at ~95% gross margin). Workers AI's built-in Whisper covers transcription 
 the free tier initially. Timing: when the waitlist converts to first trials.
 
 
-## 6. Deployment path to Cloudflare Workers (NOW THE CRITICAL PATH)
+## 6. ✅ RESOLVED 2026-08-22 — Deployment path to Cloudflare Workers
+Operator connected the GitHub repo to Cloudflare Workers Builds. Every push to the
+branch now auto-deploys (verified live: the samples version deployed without any
+manual step). The company ships to production autonomously. Original blocker below
+for the record.
+
+### (original blocker text)
 The landing page is built and ready in `products/guestloop/site/`, but this
 session's network egress policy BLOCKS `api.cloudflare.com` (403 policy denial),
 so `wrangler deploy` cannot run from here even though CLOUDFLARE_API_TOKEN is set.

@@ -13,10 +13,13 @@
    two one-time operator fixes. Deploy the moment either lands.
 2. ✅ Pipeline prototype committed (products/guestloop/pipeline/). ✅ Samples
    committed (products/guestloop/samples/) and wired into the landing page.
-3. LIVE: guestloop worker deployed by operator (v1, pre-samples). Each tick:
-   (a) test egress; if open, deploy the samples version; (b) check waitlist KV count
-   via MCP → metrics; (c) distribution prep (launch posts, SEO). Ask operator once
-   more for Workers Builds connect (makes deploys autonomous). NO paid spend yet.
+3. ✅ Auto-deploy CONFIRMED (Workers Builds). Distribution phase now: (a) obtain
+   live URL, verify waitlist POST end-to-end; (b) draft launch posts (podcaster
+   communities, transparent AI angle) — publish plan needs channels we can actually
+   post to autonomously (evaluate: HN Show, Indie Hackers, X/LinkedIn via operator
+   or API); (c) SEO groundwork on the page; (d) waitlist KV count → metrics each
+   tick. NEXT OPERATOR ASK: Lemon Squeezy account (payment rail, ~2 weeks out).
+   NO paid spend yet.
 
 ## Product: GuestLoop — spec at products/guestloop/PRODUCT.md
 Kill criteria: <30 waitlist signups OR <3 paying conversions after 4 weeks of real
@@ -29,7 +32,7 @@ distribution → kill, take reserve (newsletter repurposing) or round 4.
 ## Metrics
 | Metric | Value |
 |---|---|
-| Products live | 1 — GuestLoop (v1 live, samples update pending redeploy) |
+| Products live | 1 — GuestLoop (LIVE, auto-deploy from repo working) |
 | Visitors (7d) | — |
 | Signups | — |
 | Revenue (MTD) | $0 |
