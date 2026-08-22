@@ -6,6 +6,10 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 14:12 UTC — Tick 36 (hourly): Quiet hold
+**Done:** Metrics only. GuestLoop waitlist: 1. Undertone deploy: still pending (#8).
+**Next:** Hold; instant action on any operator key (#7/#8/#1/#5).
+
 ## 2026-08-22 13:12 UTC — Tick 35 (hourly): Quiet hold
 **Done:** Metrics only. GuestLoop waitlist: 1 (unchanged). Undertone worker: not
 yet deployed (#8). No build work remaining that isn't gated on operator keys.
