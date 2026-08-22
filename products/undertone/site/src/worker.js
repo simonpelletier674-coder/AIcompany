@@ -214,27 +214,28 @@ const HTML = `<!doctype html>
   <section class="sec" id="report">
     <span class="kicker">The deliverable</span>
     <h2>An analyst's monthly report. Without the analyst.</h2>
-    <p class="lead">Illustrative example below — a full sample generated from real public review data is in the works and will replace it.</p>
+    <p class="lead">Real output below â generated from 6,145 genuine dress reviews in a public-domain dataset (23,486 real, anonymized reviews of a real apparel retailer). Every count and quote is reproducible from the data.</p>
     <div class="repWin">
-      <div class="repHead"><b>Voice of Customer — August</b><span class="badge">vs. July</span></div>
+      <div class="repHead"><b>Voice of Customer â Dresses</b><span class="badge">6,145 real reviews</span></div>
       <div class="repBody">
         <div>
           <table class="tbl">
-            <tr><th>Theme</th><th>Mentions</th><th>Trend</th></tr>
-            <tr><td>Sizing runs small (Linen Shirt)</td><td>41</td><td class="up">↑ 32%</td></tr>
-            <tr><td>Stitching durability (new batch)</td><td>17</td><td class="up">↑ new</td></tr>
-            <tr><td>Shipping speed praise</td><td>63</td><td class="dn">↑ steady</td></tr>
-            <tr><td>Requests: more colorways</td><td>28</td><td class="up">↑ 12%</td></tr>
+            <tr><th>Theme</th><th>Mentions</th><th>Share</th></tr>
+            <tr><td>Sizing inconsistency (runs large + small)</td><td>233</td><td class="up">15.4% of critical</td></tr>
+            <tr><td>Unflattering silhouette / cut</td><td>150</td><td class="up">9.9% of critical</td></tr>
+            <tr><td>Cheap / poor-quality fabric</td><td>134</td><td class="up">8.9% of critical</td></tr>
+            <tr><td>Zipper defects (broken, won't close)</td><td>86</td><td class="up">5.7% of critical</td></tr>
+            <tr><td>Praise: flattering / great fit</td><td>1,454</td><td class="dn">31.4% of positive</td></tr>
           </table>
         </div>
         <div class="drafts">
-          <div class="fix"><b>Drafted description edit</b>"Fits snug — most customers size up one. Measurements in the size guide below."</div>
-          <div class="fix"><b>Supplier alert</b>Stitching complaints began with July's restock batch. Flag lot #2207 with your supplier before reordering.</div>
-          <div class="fix"><b>Response template</b>"Sorry the fit missed — we'll send a size up, on us. Keep the original."</div>
+          <div class="fix"><b>Drafted description edit</b>"Fit note: this style runs [large/small] through the [bust/waist]. Reviewers who found it snug recommend sizing up." â addressing the 233-mention sizing cluster.</div>
+          <div class="fix"><b>Supplier alert</b>Zipper defects: 86 independent reports of the identical failure mode ("won't even zip up on the hanger") â a QC signal, not a sizing issue. Inspect zipper hardware before the next production run.</div>
+          <div class="fix"><b>Response template</b>"A few customers told us this style runs [large/small], so we've updated the fit notes. I'd love to get you the right size â free exchange or full refund, your pick."</div>
         </div>
       </div>
     </div>
-    <p class="exNote">Reports arrive as a web page + PDF. Nothing to install, nothing shopper-facing.</p>
+    <p class="exNote">Sample from the CC0 Women’s Clothing E-Commerce Reviews dataset; Undertone is not affiliated with the retailer. Every quote verified verbatim against the source data. Reports arrive as a web page + PDF — nothing shopper-facing.</p>
   </section>
 
   <section class="sec">
