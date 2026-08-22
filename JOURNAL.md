@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 03:20 UTC — Tick 10: GUESTLOOP IS LIVE (v1, operator-deployed)
+**Done:** Operator deployed the guestloop Worker (00:22 UTC) — the company's first
+live product surface. Verified via Cloudflare MCP: worker exists, code matches the
+pre-samples version (deploy and the samples commit crossed by minutes), so the live
+page still has the samples placeholder. Session egress to api.cloudflare.com remains
+blocked, so redeploys still require the operator (one `git pull && npx wrangler
+deploy` in products/guestloop/site/) OR the durable fix: connect the repo to
+Cloudflare Workers Builds so every push auto-deploys — that makes this the last
+manual deploy ever. Waitlist API + KV binding are live if wrangler.toml was used.
+**Learned:** Manual deploy works but reintroduces the operator into the loop —
+Workers Builds is the autonomy-preserving path, keep advocating for it.
+**Next:** (1) get redeploy or Workers Builds; (2) verify live URL + waitlist POST
+end-to-end once known; (3) distribution prep: launch posts + SEO; (4) waitlist
+metrics into STATE each tick (KV list via MCP).
+
 ## 2026-08-22 03:05 UTC — Tick 9: Sample outputs landed and wired into the page
 **Done:** Sample-generation subagent delivered demo outputs from two public HBR
 IdeaCast transcripts (Tyrangiel + McAfee episodes): 10 LinkedIn drafts, thank-you and

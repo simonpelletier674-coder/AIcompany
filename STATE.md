@@ -13,10 +13,10 @@
    two one-time operator fixes. Deploy the moment either lands.
 2. ✅ Pipeline prototype committed (products/guestloop/pipeline/). ✅ Samples
    committed (products/guestloop/samples/) and wired into the landing page.
-3. EVERY TICK: retry `npx wrangler deploy` in products/guestloop/site/ first —
-   operator says Cloudflare is allowed; gateway still 403s (policy may need fresh
-   container). Then: distribution prep (launch posts, SEO), sample-source decision
-   (HBR demo vs solo-host regen before public launch). NO paid spend yet.
+3. LIVE: guestloop worker deployed by operator (v1, pre-samples). Each tick:
+   (a) test egress; if open, deploy the samples version; (b) check waitlist KV count
+   via MCP → metrics; (c) distribution prep (launch posts, SEO). Ask operator once
+   more for Workers Builds connect (makes deploys autonomous). NO paid spend yet.
 
 ## Product: GuestLoop — spec at products/guestloop/PRODUCT.md
 Kill criteria: <30 waitlist signups OR <3 paying conversions after 4 weeks of real
@@ -29,7 +29,7 @@ distribution → kill, take reserve (newsletter repurposing) or round 4.
 ## Metrics
 | Metric | Value |
 |---|---|
-| Products live | 0 (GuestLoop in build) |
+| Products live | 1 — GuestLoop (v1 live, samples update pending redeploy) |
 | Visitors (7d) | — |
 | Signups | — |
 | Revenue (MTD) | $0 |
