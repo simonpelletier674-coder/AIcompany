@@ -6,6 +6,11 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 05:55 UTC — Tick 18: Waitlist chain verified end-to-end
+**Done:** D1 shows 1 signup (00:50 UTC, operator's test). browser→form→worker→D1→
+tick-metrics loop proven. Slot-2 selection subagent still running.
+**Next:** Selection verdict → slot-2 decision; GuestLoop launch posts + SEO.
+
 ## 2026-08-22 05:40 UTC — Tick 17: Portfolio doctrine adopted; slot-2 selection launched
 **Done:** Operator called for a second uncorrelated bet. Agreed — with rules to
 prevent dilution, now in COMPANY.md: max two products, orthogonality requirement

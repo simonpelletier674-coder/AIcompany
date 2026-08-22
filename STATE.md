@@ -34,5 +34,5 @@ distribution → kill, take reserve (newsletter repurposing) or round 4.
 |---|---|
 | Products live | 1 — GuestLoop v2 (LIVE; push→auto-deploy VERIFIED via bundle provenance) |
 | Visitors (7d) | — |
-| Signups | 0 (D1; awaiting first test signup on v2) |
+| Signups | 1 (operator test — full chain verified end-to-end) |
 | Revenue (MTD) | $0 |
