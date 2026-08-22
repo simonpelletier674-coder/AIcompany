@@ -8,16 +8,28 @@ const HTML = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GuestLoop — your podcast, working for you all week</title>
 <meta name="description" content="GuestLoop listens to every episode of your show, remembers every guest and open thread, and drafts your LinkedIn week plus guest follow-ups — with callbacks across your whole back catalog.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GuestLoop — one episode in, a week of LinkedIn out">
+<meta property="og:description" content="AI that listens to your whole podcast, remembers every guest and open thread, and drafts your LinkedIn week plus guest follow-up emails — with cross-episode callbacks no one-off tool can write.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GuestLoop — one episode in, a week of LinkedIn out">
+<meta name="twitter:description" content="AI that remembers your whole show: LinkedIn drafts + guest follow-ups from every episode, with cross-episode callbacks.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235eead4'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230e1116'/%3E%3Cpath d='M32 12a20 20 0 1 1-14.1 5.9' fill='none' stroke='url(%23g)' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0e1116; --panel:#161b23; --panel2:#1c2330; --text:#e8ecf1; --muted:#9aa7b5;
     --accent:#5eead4; --accent2:#38bdf8; --border:#2a3341; --good:#4ade80;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo,.tier .amt{font-family:Sora,Inter,-apple-system,sans-serif}
   .wrap{max-width:960px;margin:0 auto;padding:0 24px}
   header{padding:28px 0;display:flex;align-items:center;justify-content:space-between}
-  .logo{font-weight:700;font-size:20px;letter-spacing:-.02em}
+  .logo{font-weight:700;font-size:20px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+  .logo svg{width:26px;height:26px}
   .logo span{color:var(--accent)}
   .pill{font-size:13px;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:4px 12px}
   .hero{padding:56px 0 40px;text-align:left}
@@ -64,7 +76,7 @@ const HTML = `<!doctype html>
 <body>
 <div class="wrap">
   <header>
-    <div class="logo">Guest<span>Loop</span></div>
+    <div class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><path d="M32 12a20 20 0 1 1-14.1 5.9" fill="none" stroke="url(#lg)" stroke-width="7" stroke-linecap="round"/><circle cx="32" cy="32" r="6" fill="url(#lg)"/></svg>Guest<span>Loop</span></div>
     <div class="pill">Early access</div>
   </header>
 
