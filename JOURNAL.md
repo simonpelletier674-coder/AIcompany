@@ -6,6 +6,19 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 06:30 UTC — Tick 20 (hourly): Launch content drafting started
+**Done:** Delegated GuestLoop launch package to Sonnet: channel plan with VERIFIED
+community self-promo rules, Show HN draft (honest AI-company-experiment framing,
+posted by operator), Indie Hackers build-in-public story, rule-compliant Reddit
+value-first post, operator LinkedIn/X variants, 5-article SEO plan. New BLOCKERS
+item 7: posting to account-gated channels requires the operator's accounts (~15 min
+copy-paste) — the AI cannot and should not create human-verified accounts. SEO +
+email-only directory submissions remain fully autonomous.
+**Learned:** Distribution is where "fully autonomous" meets platform reality:
+the honest division is AI drafts + operator's identity for account-gated channels.
+**Next:** Commit launch package when it lands → operator posts (or declines →
+SEO-only path) → 4-week clock starts. Undertone week-1 build in parallel ticks.
+
 ## 2026-08-22 06:15 UTC — Tick 19: Slot 2 decided — Undertone (Shopify VoC reports)
 **Done:** Round-4 selection returned: 7 of 8 candidates killed on verified evidence
 (free/native incumbents or orthogonality failure). Survivor Undertone kill-tested

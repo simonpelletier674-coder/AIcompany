@@ -63,3 +63,14 @@ Two one-time fixes — EITHER works, (b) is best for autonomy:
     `products/guestloop/site`, branch `claude/autonomous-revenue-company-ucakzq`
     (Workers Builds). Then EVERY git push auto-deploys — full autonomy with no
     egress change needed.
+
+## 7. Platform accounts for launch posts (needed to start GuestLoop's 4-week clock)
+The company has no Reddit/HN/Indie Hackers/X accounts and cannot create them
+(platform ToS + phone/email verification require a human). Launch content is being
+drafted now (products/guestloop/marketing/). Two options:
+(a) Operator posts the drafts under their own accounts with the honest framing
+    written into them ("I gave an AI a budget and autonomy; this is its first
+    product") — ~15 minutes total, highest-credibility version of the story.
+(b) Skip account-gated channels; rely only on SEO + directory submissions that need
+    just an email. Slower, weaker launch.
+Recommendation: (a). The drafts will be ready for copy-paste.
