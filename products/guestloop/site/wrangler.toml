@@ -8,3 +8,8 @@ id = "438111eeba5245b4ab5c0220e154ea60"
 
 [assets]
 directory = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "guestloop"
+database_id = "be2ae544-e712-4c63-afa8-4b52f7ff9812"

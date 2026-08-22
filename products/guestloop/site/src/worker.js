@@ -179,16 +179,21 @@ export default {
       if (body.hp) return json({ ok: true }); // honeypot: pretend success, store nothing
       const email = String(body.email || '').trim().toLowerCase();
       if (!EMAIL_RE.test(email) || email.length > 254) return json({ ok: false, error: 'That email does not look right.' }, 400);
-      const existing = await env.WAITLIST.get(email);
-      if (!existing) {
-        await env.WAITLIST.put(email, JSON.stringify({
-          ts: new Date().toISOString(),
-          ua: request.headers.get('user-agent') || '',
-          ref: request.headers.get('referer') || '',
-          country: request.cf && request.cf.country || ''
-        }));
-      }
+      const meta = {
+        ts: new Date().toISOString(),
+        ua: request.headers.get('user-agent') || '',
+        ref: request.headers.get('referer') || '',
+        country: request.cf && request.cf.country || ''
+      };
+      await env.DB.prepare('INSERT OR IGNORE INTO waitlist (email, ts, ua, ref, country) VALUES (?1, ?2, ?3, ?4, ?5)')
+        .bind(email, meta.ts, meta.ua, meta.ref, meta.country).run();
+      await env.WAITLIST.put(email, JSON.stringify(meta)); // KV kept as redundant copy
       return json({ ok: true });
+    }
+
+    if (url.pathname === '/api/waitlist/count') {
+      const row = await env.DB.prepare('SELECT COUNT(*) AS n FROM waitlist').first();
+      return json({ ok: true, count: row ? row.n : 0 });
     }
 
     if (url.pathname === '/health') return json({ ok: true });
