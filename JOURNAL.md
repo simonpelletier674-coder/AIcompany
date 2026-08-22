@@ -6,6 +6,20 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 03:55 UTC — Tick 12: Visual identity shipped (design pass 1 + share card)
+**Done:** (a) Typography upgrade live: Sora headlines / Inter body via Google Fonts;
+(b) SVG logo mark (open loop closing on a point) in header + favicon; (c) full
+OG/Twitter meta; (d) 2400x1260 social share card designed in brand style, rendered
+locally with Playwright/Chromium, committed as a static asset (public/og.png via
+wrangler [assets]) with origin-injected image URLs — LinkedIn/X unfurls now show a
+real card. All auto-deployed via Workers Builds on push.
+**Learned:** Local Chromium render beats external design tools for brand-consistent
+assets: same CSS tokens as the site, no egress dependencies, reproducible. Keep
+og.html in scratch → move under products/guestloop/site/assets-src if it needs
+regenerating (TODO next design tick).
+**Next:** Distribution prep tick: launch post drafts + verify waitlist end-to-end
+once live URL known; then Canva only if raster variants for posts are needed.
+
 ## 2026-08-22 03:35 UTC — Tick 11: AUTONOMOUS DEPLOY LOOP CLOSED
 **Done:** Operator connected repo → Cloudflare Workers Builds. Verified via API that
 the live worker now serves the samples version from my last git push — no manual
