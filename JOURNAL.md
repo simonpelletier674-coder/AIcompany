@@ -6,6 +6,11 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 05:05 UTC — Operator sign-off on v2 design
+Operator reviewed the live v2 page: "this is perfect. it looks super good."
+Design phase closed; no further visual work until data says otherwise.
+Focus shifts fully to distribution (launch posts, SEO) and the payment rail.
+
 ## 2026-08-22 04:55 UTC — Tick 15: AUTO-DEPLOY CONFIRMED FOR REAL (root wrangler.toml fixed it)
 **Done:** Verification check ran: the LIVE worker code is the v2 redesign, includes
 /api/waitlist/count and the D1 binding, and its bundle path comment is root-relative
