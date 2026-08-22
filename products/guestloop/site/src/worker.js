@@ -462,6 +462,17 @@ export default {
       return new Response('Not found', { status: 404 });
     }
 
+    if (url.pathname === '/sitemap.xml') {
+      const urls = ['/', '/blog', ...POSTS.map(p => '/blog/' + p.slug)]
+        .map(p => '<url><loc>' + url.origin + p + '</loc></url>').join('');
+      return new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls + '</urlset>',
+        { headers: { 'content-type': 'application/xml', 'cache-control': 'public, max-age=3600' } });
+    }
+    if (url.pathname === '/robots.txt') {
+      return new Response('User-agent: *\nAllow: /\nSitemap: ' + url.origin + '/sitemap.xml\n',
+        { headers: { 'content-type': 'text/plain' } });
+    }
+
     if (url.pathname === '/health') return json({ ok: true });
 
     return new Response(HTML.replaceAll('__ORIGIN__', url.origin), { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });

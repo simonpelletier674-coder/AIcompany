@@ -6,6 +6,16 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 10:20 UTC — Tick 28 (hourly): SEO infra + Undertone share card
+**Done:** (1) guestloop /sitemap.xml (7 URLs) + /robots.txt shipped, smoke-tested
+through the worker — search engines can now crawl the topic cluster properly.
+(2) Undertone OG share card designed and rendered (real numbers from the sample
+report as stat chips: 233 sizing mentions, 86 zipper defects, 6,145 reviews read),
+committed as static asset with origin-injected meta tags. Caught + fixed a font-
+fallback bug in the render pipeline (Sora with no fallback → serif; now stacked).
+**Next:** Undertone CSV-upload MVP build (week-1 plan) becomes the main build
+track. Awaiting operator: #7 posts, #8 undertone deploy connect, #1 Lemon Squeezy.
+
 ## 2026-08-22 09:50 UTC — Tick 27: Undertone proof is now REAL data
 **Done:** Real-data sample integrated. The agent fetched the CC0 Women's Clothing
 E-Commerce Reviews dataset (23,486 real reviews, md5-verified across 3 mirrors),

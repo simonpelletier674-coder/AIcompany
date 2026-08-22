@@ -11,7 +11,11 @@ const HTML = `<!doctype html>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Undertone — your reviews already know what to fix">
 <meta property="og:description" content="A monthly Voice-of-Customer report for Shopify merchants: complaint clusters per product, trend drift caught early, fixes already drafted. Complement to Judge.me/Yotpo/Loox.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="__ORIGIN__/og.png">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="__ORIGIN__/og.png">
 <meta name="twitter:title" content="Undertone — your reviews already know what to fix">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbbf24'/%3E%3Cstop offset='1' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230e0c12'/%3E%3Crect x='14' y='17' width='36' height='6' rx='3' fill='%23382f47'/%3E%3Crect x='14' y='29' width='36' height='6' rx='3' fill='%23382f47'/%3E%3Crect x='14' y='41' width='36' height='6' rx='3' fill='url(%23g)'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -357,7 +361,7 @@ export default {
 
     if (url.pathname === '/health') return json({ ok: true });
 
-    return new Response(HTML, { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });
+    return new Response(HTML.replaceAll('__ORIGIN__', url.origin), { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });
   }
 };
 
