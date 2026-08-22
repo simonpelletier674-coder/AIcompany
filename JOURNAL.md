@@ -6,6 +6,22 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 04:45 UTC — Tick 14: Landing page v2 — visual-first redesign shipped
+**Done:** Competitor teardown (Castmagic, Podsqueeze, Repurpose, Taplio, Gamma as
+best-in-class) delivered a concrete brief: ~500-word copy budget, show-don't-tell,
+borrow LinkedIn's own card grammar for output proof, honest zero-social-proof
+handling. Page rebuilt accordingly: hero product mockup (episode card → overnight →
+fanned LinkedIn+email drafts in a browser frame), 3-step how-it-works with gradient
+timeline, real HBR sample as a pixel-faithful LinkedIn post card + email-client
+window, cross-episode memory visualization (episode pills → callback note), persona
+cards, honest-proof panel (no testimonials on purpose + AI transparency), pricing
+with gradient-bordered Pro tier, details/summary FAQ, repeat CTA. Copy cut ~45%.
+Iterated locally via Playwright full-page screenshot before shipping. Pushed —
+deploy pending Workers Builds verification (send_later check outstanding).
+**Learned:** The screenshot-locally-before-push loop (Chromium) is the design QA
+process; keep page.html source of truth in scratch → consider moving to repo.
+**Next:** Confirm build fix verdict; D1 test-signup check; then launch posts + SEO.
+
 ## 2026-08-22 04:15 UTC — Tick 13: Live URL received; observability rerouted through D1
 **Done:** Live URL: guestloop.young-math-36a1.workers.dev. Discovered the session
 egress blocks workers.dev entirely (curl AND WebFetch) — the company cannot see its
