@@ -8,7 +8,7 @@ const HTML = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GuestLoop — every episode becomes a week of content</title>
-<meta name="description" content="GuestLoop drafts LinkedIn posts and guest follow-up emails from every episode of your podcast — and remembers your past guests, so nothing gets repeated or forgotten.">
+<meta name="description" content="GuestLoop turns every podcast episode into five ready-to-post LinkedIn drafts plus guest follow-up emails — and remembers your whole back catalog, so nothing gets repeated or forgotten.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GuestLoop — one episode in, a week of LinkedIn out">
 <meta property="og:description" content="AI that listens to your whole podcast, remembers every guest and open thread, and drafts your LinkedIn week plus guest follow-up emails — with cross-episode callbacks no one-off tool can write.">
@@ -189,7 +189,7 @@ const HTML = `<!doctype html>
 
   <section class="hero">
     <h1>Every episode becomes <em>a week of content.</em></h1>
-    <p class="sub">GuestLoop drafts LinkedIn posts and guest follow-up emails from every episode of your podcast — and remembers your past guests, so nothing gets repeated or forgotten.</p>
+    <p class="sub">GuestLoop turns every podcast episode into five ready-to-post LinkedIn drafts plus guest follow-up emails — and remembers your whole back catalog, so nothing gets repeated or forgotten.</p>
     <form class="cta" id="wl">
       <input type="email" id="email" name="email" placeholder="you@yourshow.com" required autocomplete="email">
       <input type="text" name="company" id="hp" style="display:none" tabindex="-1" autocomplete="off">
@@ -298,7 +298,7 @@ const HTML = `<!doctype html>
 
   <section class="sec">
     <span class="kicker">Pricing</span>
-    <h2>Less than one hour of your time.</h2>
+    <h2>About $7 a week for the whole week's content.</h2>
     <div class="tiers">
       <div class="tier"><div class="name">Solo</div><div class="amt">$29<small>/mo</small></div><ul><li>Up to 4 episodes a month</li><li>5 LinkedIn drafts per episode</li><li>Guest follow-up emails</li><li>Full show memory</li></ul></div>
       <div class="tier rec"><div class="name">Pro</div><div class="amt">$49<small>/mo</small></div><ul><li>Unlimited episodes</li><li>Everything in Solo</li><li>Auto-post option (opt-in pilot)</li><li>Priority pipeline</li></ul></div>

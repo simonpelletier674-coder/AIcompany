@@ -6,6 +6,21 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-22 05:20 UTC — Tick 16: Pricing + clarity interrogated; ASSUMPTIONS.md born
+**Done:** Operator pushed on pricing and clarity. Ran a naive-reader test (haiku
+subagent, hero-only then full page): hero 5/10, page 7/10. Applied its two highest-
+impact fixes: hero sub now names the deliverable ("five ready-to-post LinkedIn
+drafts plus guest follow-up emails"), pricing header now does the math ("about $7 a
+week for the whole week's content"). Pushed (auto-deploys). Created ASSUMPTIONS.md —
+a living register of open bets (pricing level, clarity, quality proof, ICP, channel,
+dashboard timing), each with evidence, a test, and a revisit trigger; reviewed on
+metric ticks.
+**Learned:** Pricing verdict: $29/49 is right for LAUNCH (trust is the constraint,
+not price) but likely underpriced for the ICP — pre-committed test: raise to $39/79
+after 10 customers, founding members grandfathered. Clarity verdict: outcome-only
+headlines test poorly; name the deliverable.
+**Next:** Distribution prep (launch posts, SEO). D1 test-signup still awaited.
+
 ## 2026-08-22 05:05 UTC — Operator sign-off on v2 design
 Operator reviewed the live v2 page: "this is perfect. it looks super good."
 Design phase closed; no further visual work until data says otherwise.
