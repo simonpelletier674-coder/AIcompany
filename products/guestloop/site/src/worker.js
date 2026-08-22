@@ -1,4 +1,5 @@
-// GuestLoop landing page + waitlist API — Cloudflare Worker
+// GuestLoop landing page + blog + waitlist API — Cloudflare Worker
+import { POSTS } from './blog-data.js';
 // Waitlist: D1 table `waitlist` (primary) + KV copy (backup). __ORIGIN__ is
 // replaced with the request origin at serve time (absolute OG image URLs).
 
@@ -184,6 +185,7 @@ const HTML = `<!doctype html>
 <div class="wrap">
   <nav>
     <div class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><path d="M32 12a20 20 0 1 1-14.1 5.9" fill="none" stroke="url(#lg)" stroke-width="7" stroke-linecap="round"/><circle cx="32" cy="32" r="6" fill="url(#lg)"/></svg><b>Guest<span>Loop</span></b></div>
+    <a class="ghost" style="margin:0;border:0" href="/blog">Blog</a>
     <a class="navcta" href="#join">Join early access</a>
   </nav>
 
@@ -359,6 +361,69 @@ wire('wl','email','msg'); wire('wl2','email2','msg2');
 </html>
 `;
 
+
+const BLOG_CSS = `
+  :root{--bg:#0b0e13;--bg2:#0e1117;--panel:#141922;--text:#eef2f7;--muted:#94a1b2;--accent:#5eead4;--accent2:#38bdf8;--border:#242d3a;--grad:linear-gradient(90deg,#5eead4,#38bdf8)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font:17px/1.75 Inter,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo{font-family:Sora,Inter,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:19px;color:var(--text);text-decoration:none}
+  .logo svg{width:25px;height:25px}
+  .logo span{color:var(--accent)}
+  .navcta{font-size:14px;font-weight:600;color:#08222b;background:var(--grad);border-radius:999px;padding:9px 18px;text-decoration:none}
+  h1{font-size:clamp(28px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:36px 0 10px}
+  .byline{color:var(--muted);font-size:15px;margin-bottom:34px}
+  article h2{font-size:24px;letter-spacing:-.01em;margin:38px 0 12px}
+  article h3{font-size:19px;margin:28px 0 10px}
+  article p{margin:14px 0}
+  article a{color:var(--accent2)}
+  article ul,article ol{margin:14px 0 14px 24px}
+  article li{margin:6px 0}
+  article strong{color:#fff}
+  article blockquote{border-left:3px solid var(--accent);background:var(--panel);border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0;color:#dbe3ec;font-size:15.5px}
+  article blockquote p{margin:8px 0}
+  article table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px;display:block;overflow-x:auto}
+  article th,article td{border:1px solid var(--border);padding:9px 12px;text-align:left}
+  article th{color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.05em}
+  .cta{margin:52px 0;background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px;text-align:center}
+  .cta b{font-family:Sora;font-size:19px}
+  .cta p{color:var(--muted);margin:8px 0 16px;font-size:15px}
+  .cta a{display:inline-block;background:var(--grad);color:#08222b;font-weight:700;border-radius:12px;padding:12px 24px;text-decoration:none}
+  .idx a.card{display:block;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;margin:14px 0;text-decoration:none;color:var(--text);transition:border-color .2s}
+  .idx a.card:hover{border-color:var(--accent)}
+  .idx .card b{font-family:Sora;font-size:18px}
+  .idx .card p{color:var(--muted);font-size:15px;margin-top:6px}
+  footer{border-top:1px solid var(--border);margin-top:60px;padding:24px 0 44px;color:var(--muted);font-size:13.5px}
+`;
+
+const LOGO_SVG = '<svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><path d="M32 12a20 20 0 1 1-14.1 5.9" fill="none" stroke="url(#lg)" stroke-width="7" stroke-linecap="round"/><circle cx="32" cy="32" r="6" fill="url(#lg)"/></svg>';
+
+function blogShell(title, description, inner) {
+  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
+    + '<title>' + title + '</title><meta name="description" content="' + description.replace(/"/g, '&quot;') + '">'
+    + '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    + '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">'
+    + '<style>' + BLOG_CSS + '</style></head><body><div class="wrap">'
+    + '<nav><a class="logo" href="/">' + LOGO_SVG + '<b>Guest<span>Loop</span></b></a><a class="navcta" href="/#join">Join early access</a></nav>'
+    + inner
+    + '<footer>© 2026 GuestLoop · Written and operated autonomously by an AI, supervised by a human owner.</footer>'
+    + '</div></body></html>';
+}
+
+function blogIndex() {
+  const cards = POSTS.map(p => '<a class="card" href="/blog/' + p.slug + '"><b>' + p.title + '</b><p>' + p.description + '</p></a>').join('');
+  return blogShell('GuestLoop Blog — podcasting for business development', 'Practical guides on turning podcast episodes into LinkedIn content and guest relationships.',
+    '<h1>The GuestLoop blog</h1><p class="byline">Practical, no-fluff guides for hosts who podcast for business.</p><div class="idx">' + cards + '</div>');
+}
+
+function blogPost(p) {
+  const cta = '<div class="cta"><b>Want this done automatically?</b><p>GuestLoop turns every episode into five LinkedIn drafts plus guest follow-up emails — with memory of your whole show.</p><a href="/#join">Join early access</a></div>';
+  return blogShell(p.title + ' — GuestLoop', p.description,
+    '<h1>' + p.title + '</h1><p class="byline">By the GuestLoop team</p><article>' + p.html + '</article>' + cta);
+}
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 export default {
@@ -388,11 +453,24 @@ export default {
       return json({ ok: true, count: row ? row.n : 0 });
     }
 
+    if (url.pathname === '/blog' || url.pathname === '/blog/') {
+      return html(blogIndex());
+    }
+    if (url.pathname.startsWith('/blog/')) {
+      const p = POSTS.find(x => '/blog/' + x.slug === url.pathname);
+      if (p) return html(blogPost(p));
+      return new Response('Not found', { status: 404 });
+    }
+
     if (url.pathname === '/health') return json({ ok: true });
 
     return new Response(HTML.replaceAll('__ORIGIN__', url.origin), { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });
   }
 };
+
+function html(body) {
+  return new Response(body, { headers: { 'content-type': 'text/html;charset=utf-8', 'cache-control': 'public, max-age=300' } });
+}
 
 function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), { status, headers: { 'content-type': 'application/json' } });
