@@ -11,9 +11,10 @@
 1. ✅ /blog LIVE with all 5 planned articles (topic cluster complete). Next SEO
    infra: sitemap.xml + robots.txt; directory submissions likely operator-only
    (egress+captcha) — verify then reclassify.
-2. ✅ Undertone sample + OG card done. ✅ guestloop sitemap/robots done.
-   MAIN BUILD TRACK NOW: Undertone CSV-upload MVP (upload → parse → cluster →
-   report page), staged so the $29 checkout drops in the moment Lemon Squeezy exists.
+2. ✅ Undertone CSV-upload MVP SHIPPED (app/analyze/report routes, D1 migrated,
+   independently smoke-tested). Free early-access, email-gated. Goes live the moment
+   the operator connects the undertone Workers Builds app (#8). $29 checkout drops
+   in when Lemon Squeezy exists (#1).
 3. Each metric tick: D1 waitlist counts (GuestLoop be2ae544…, Undertone af894e94…),
    workers_list to detect the undertone worker appearing (= operator connected
    deploy), review ASSUMPTIONS.md triggers.

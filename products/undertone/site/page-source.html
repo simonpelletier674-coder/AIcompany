@@ -39,6 +39,7 @@
   .msg.ok{color:var(--good)}.msg.err{color:#f87171}
   .ghost{display:inline-block;margin-top:12px;color:var(--muted);font-size:15px;text-decoration:none;border-bottom:1px dashed var(--border2)}
   .ghost:hover{color:var(--accent)}
+  .ghostRow{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}
 
   .mock{margin:52px auto 0;max-width:960px;position:relative}
   .glow{position:absolute;inset:-40px -80px;background:radial-gradient(600px 300px at 30% 20%,rgba(251,191,36,.09),transparent 60%),radial-gradient(600px 300px at 75% 80%,rgba(251,113,133,.09),transparent 60%);pointer-events:none}
@@ -164,7 +165,10 @@
       <button type="submit">Join early access</button>
     </form>
     <div class="msg" id="msg"></div>
-    <a class="ghost" href="#report">or see what a report looks like ↓</a>
+    <div class="ghostRow">
+      <a class="ghost" href="#report">or see what a report looks like ↓</a>
+      <a class="ghost" href="/app">or analyze your reviews free →</a>
+    </div>
 
     <div class="mock">
       <div class="glow"></div>
