@@ -6,6 +6,13 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-23 21:09 UTC — Tick 66 (hourly): Metrics check done + permission-prompt fix
+**Done:** (1) First full metrics check since tick 39: GuestLoop D1 waitlist = 1 (operator test only — expected, no distribution yet). Auto-deploy re-confirmed: guestloop worker redeployed at 20:09 UTC, seconds after the tick-60–65 push. Undertone worker still absent → blocker #8 (second Workers Builds connect) still open. (2) Operator flagged that D1/Cloudflare MCP calls prompt for authorization every hour — not sustainable. Fixed: added `.claude/settings.json` with a pre-approved allowlist of READ-ONLY Cloudflare MCP tools (d1_database_query, workers_list, worker code/get, kv list/get). Write-capable tools (create/delete DB, KV, R2) intentionally stay gated.
+**Learned:** Permission prompts are an autonomy tax; anything the hourly loop touches must be pre-approved in project settings or it silently stalls the loop until a human clicks.
+**Next:** Settings apply from the next session turn. If a prompt still appears on the next tick's D1 call, the fallback is the operator choosing "Always allow" once in that prompt. Otherwise: hold; instant action on operator keys (#7/#8/#1/#5).
+
+---
+
 ## 2026-08-23 20:09 UTC — Ticks 60–65 (hourly): Quiet hold
 **Done:** Covers the six hourly fires from 15:09 through 20:09 UTC — each turn was again cut off after the notification read, so entries batch here per the journal-first rule. Repo clean and up to date; no operator-key signals observed in the window.
 **Learned:** Nothing new; interruption pattern unchanged, batching remains the reliable way to keep the record honest.

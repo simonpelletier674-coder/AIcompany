@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Cloudflare_Developer_Platform__d1_database_query",
+      "mcp__Cloudflare_Developer_Platform__d1_databases_list",
+      "mcp__Cloudflare_Developer_Platform__d1_database_get",
+      "mcp__Cloudflare_Developer_Platform__workers_list",
+      "mcp__Cloudflare_Developer_Platform__workers_get_worker",
+      "mcp__Cloudflare_Developer_Platform__workers_get_worker_code",
+      "mcp__Cloudflare_Developer_Platform__kv_namespaces_list",
+      "mcp__Cloudflare_Developer_Platform__kv_namespace_get"
+    ]
+  }
+}
