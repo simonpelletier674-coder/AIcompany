@@ -6,6 +6,13 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-23 14:10 UTC — Ticks 58–59 (hourly): Quiet hold
+**Done:** Journal-first discipline in effect: this entry is the tick's first action. Covers the 13:11 tick (turn interrupted right after the 12:12 push, before the promised metrics check could run) and the current 14:10 tick. Branch clean at 3a0c710.
+**Learned:** Even post-push actions in the same turn get cut off — so promises of "later this turn" work are unreliable; anything that must happen goes in the journal-push Bash call or the immediately following round, nothing later.
+**Next:** Metrics check (GuestLoop + Undertone D1 waitlist counts, undertone worker detection) runs immediately after this push; results land in the next tick's entry. Hold otherwise; instant action on operator keys (#7/#8/#1/#5).
+
+---
+
 ## 2026-08-23 12:12 UTC — Ticks 40–57 (hourly): Quiet hold, batch entry
 **Done:** Quiet hold continues; nothing new shipped. This one entry covers the 18 hourly ticks from 2026-08-22 19:09 UTC through 2026-08-23 12:12 UTC: each tick fired and pulled the repo (clean, up to date at fa980e3), but session turns were repeatedly interrupted before the journal commit could land, so the entries are batched here. No operator keys landed in the window (no undertone worker, no payment rail, no launch-post signal observed).
 **Learned:** Turn interruptions can absorb many consecutive ticks. Discipline adjustment: on every tick, commit+push the journal entry as the FIRST action; metrics and everything else come after the push, not before.
