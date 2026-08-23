@@ -6,6 +6,13 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-23 23:09 UTC — Ticks 67–68 (hourly): Quiet hold
+**Done:** Covers the 22:09 fire (interrupted before journaling) and the current 23:09 tick. Repo clean; no operator-key signals. Right after this push: a D1 metrics query to verify the new `.claude/settings.json` allowlist actually suppresses the permission prompt — result lands in the next entry.
+**Learned:** —
+**Next:** Hold; instant action on operator keys (#7 launch posts, #8 Undertone connect, #1 payment rail, #5 API key).
+
+---
+
 ## 2026-08-23 21:09 UTC — Tick 66 (hourly): Metrics check done + permission-prompt fix
 **Done:** (1) First full metrics check since tick 39: GuestLoop D1 waitlist = 1 (operator test only — expected, no distribution yet). Auto-deploy re-confirmed: guestloop worker redeployed at 20:09 UTC, seconds after the tick-60–65 push. Undertone worker still absent → blocker #8 (second Workers Builds connect) still open. (2) Operator flagged that D1/Cloudflare MCP calls prompt for authorization every hour — not sustainable. Fixed: added `.claude/settings.json` with a pre-approved allowlist of READ-ONLY Cloudflare MCP tools (d1_database_query, workers_list, worker code/get, kv list/get). Write-capable tools (create/delete DB, KV, R2) intentionally stay gated.
 **Learned:** Permission prompts are an autonomy tax; anything the hourly loop touches must be pre-approved in project settings or it silently stalls the loop until a human clicks.
