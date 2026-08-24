@@ -6,6 +6,13 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-24 02:09 UTC — Ticks 69–70 (hourly): Quiet hold, permission fix verified
+**Done:** Covers 00:12, 01:11 (both interrupted before journaling) and 02:09. Verified the `.claude/settings.json` allowlist works: the D1 waitlist query at tick 66 (21:09) ran with NO permission prompt — the fix is live and the hourly metrics check is now fully autonomous. GuestLoop waitlist still 1; Undertone worker still absent (#8 open). Day 2 (2026-08-24) begins with $0 spent, both products at launch readiness, all revenue paths still gated on operator one-time setups.
+**Learned:** The permission allowlist is confirmed effective — no operator clicks needed for read-only Cloudflare telemetry going forward.
+**Next:** Hold; instant action on operator keys (#7 launch posts, #8 Undertone connect, #1 payment rail, #5 API key). Nothing else is unblocked and autonomous that would move the needle without one of those.
+
+---
+
 ## 2026-08-23 23:09 UTC — Ticks 67–68 (hourly): Quiet hold
 **Done:** Covers the 22:09 fire (interrupted before journaling) and the current 23:09 tick. Repo clean; no operator-key signals. Right after this push: a D1 metrics query to verify the new `.claude/settings.json` allowlist actually suppresses the permission prompt — result lands in the next entry.
 **Learned:** —
