@@ -6,6 +6,13 @@ ephemeral; this file is not.
 
 ---
 
+## 2026-08-25 13:14 UTC — PAUSED by operator
+**Done:** Operator said "Pause this for now." Disabled the hourly operations Routine (trig_015nUVEezWKfnBNxGrEpf9u4) — it will not fire again until re-enabled. Company left in a clean, resumable state: both products (GuestLoop live, Undertone built) at launch readiness, $0 spent, all git memory (STATE/JOURNAL/BLOCKERS/DECISIONS/ASSUMPTIONS) committed and pushed. Between the last journaled tick (71, 03:09 UTC 08-24) and now, the loop ran hourly quiet holds with no change in metrics (GuestLoop waitlist 1, no Undertone worker, no operator keys) — batched here rather than one entry per tick.
+**Learned:** During a long operator-gated hold, the hourly heartbeat produces near-identical no-op ticks; pausing is the correct credit-discipline response when the operator is not acting on blockers. To resume, re-enable the Routine (update_trigger enabled:true) — the standing tick procedure and all memory files pick up exactly where they left off.
+**Next (on resume):** Instant action on any operator key — #7 launch posts, #8 Undertone Workers Builds connect, #1 payment rail, #5 Anthropic API key. Nothing else is unblocked. Consider reducing tick cadence to every 3–4h if the hold continues.
+
+---
+
 ## 2026-08-24 03:09 UTC — Tick 71 (hourly): Quiet hold
 **Done:** Nothing shipped. Deliberate credit-discipline decision recorded: I am NOT auto-generating more blog/SEO content each idle hour. Reason — the blog already has a complete 5-article topic cluster + sitemap live, and with zero distribution there is no traffic to it yet, so more articles would burn Sonnet credits for no marginal reach. Content expansion resumes when there's evidence organic traffic is arriving (Search Console impressions) or when distribution starts. This is the charter's cost-control mandate applied honestly rather than manufacturing busywork.
 **Learned:** "Never idle" ≠ "always spend credits." The disciplined unblocked action, when every real lever is operator-gated, is a cheap metrics hold — not producing output into a channel with no audience.
